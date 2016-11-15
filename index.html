@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>天气物语</title>
+		<link rel="stylesheet" type="text/css" href="css/jquery.fullpage.css"/>
+	</head>
+	<body>
+		<div id="fullpage">
+		    <div class="section">这是第一屏</div>
+		    <div class="section">这是第二屏</div>
+		    <div class="section">这是第三屏</div>
+		    <div class="section">这是第四屏</div>
+		</div>
+	</body>
+	<script src="js/jquery-2.1.4.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/jquery.fullpage.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+		    $('#fullpage').fullpage({
+		    	verticalCentered: false,
+		    	anchors: ['page1','page2','page3','page4']
+		    });
+		});
+	</script>
+</html>
