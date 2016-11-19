@@ -5,11 +5,26 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
     	<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>天气物语</title>
+		<link rel="icon" href="favicon.ico" />
 		<link rel="stylesheet" type="text/css" href="css/jquery.fullpage.css"/>
+		<!--基本布局样式-->
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<!--特效样式-->
+		<link rel="stylesheet" type="text/css" href="css/effects.css"/>
 	</head>
 	<body>
 		<div id="fullpage">
-		    <div class="section">这是第一屏</div>
+		    <div class="section section1">
+		    	<div class="above_cloud">
+		    		<img src="img/page1/Above-cloud.png"/>
+		    	</div>
+		    	<div class="header_bg">
+		    		<img src="img/page1/tian.png"/><br />
+		    		<img src="img/page1/qi.png"/><br />
+		    		<img src="img/page1/wu.png"/><br />
+		    		<img src="img/page1/yu.png"/>
+		    	</div>
+		    </div>
 		    <div class="section">这是第二屏</div>
 		    <div class="section">这是第三屏</div>
 		    <div class="section">这是第四屏</div>
@@ -21,7 +36,8 @@
 		$(document).ready(function() {
 		    $('#fullpage').fullpage({
 		    	verticalCentered: false,
-		    	anchors: ['page1','page2','page3','page4']
+		    	anchors: ['page1','page2','page3','page4'],
+		    	mode : 'wheel,touch',
 		    });
 		});
 	</script>

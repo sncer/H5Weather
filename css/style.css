@@ -1,0 +1,32 @@
+.section1 {
+  background: url(../img/page1/background.png) no-repeat;
+  background-size: contain;
+}
+.above_cloud {
+  height: 6%;
+  position: absolute;
+  top: 2%;
+  right: -100%;
+  transition: all 1s ease-in-out;
+}
+.above_cloud img {
+  height: 100%;
+}
+.header_bg {
+  padding-top: 10px;
+  width: 32%;
+  height: 35%;
+  background: url(../img/page1/Below-the-words-big.png) no-repeat center;
+  background-size: 100%;
+  position: absolute;
+  top: 9%;
+  left: 50%;
+  text-align: center;
+  transition: all 1s;
+  transform: scale(0.5, 0.5) translateX(-50%);
+  opacity: 0;
+}
+.header_bg img {
+  width: 35%;
+}
+/*# sourceMappingURL=style.css.map */

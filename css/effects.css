@@ -1,0 +1,10 @@
+.active .above_cloud {
+  right: 0;
+}
+.active .header_bg {
+  opacity: 1;
+  -webkit-transform: scale(1, 1) translateX(-50%);
+  transform: scale(1, 1) translateX(-50%);
+  transition-delay: 0.7s;
+}
+/*# sourceMappingURL=effects.css.map */
