@@ -12,6 +12,16 @@
     transform: translate(-50%, 0);
   }
 }
+@keyframes drip {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, 10%);
+  }
+}
 @keyframes starsTwinkling {
   0% {
     opacity: 0;
