@@ -55,4 +55,35 @@
 .active #section2 .starts0 {
   animation: starsTwinkling 4s linear 2s infinite;
 }
+.active #section3 .text1 {
+  animation: bounceInRight 1s ease 0.5s forwards;
+}
+.active #section3 .cloud1 {
+  left: -100%;
+  transition-delay: 2s;
+}
+.active #section3 .cloud2 {
+  left: -100%;
+  transition-delay: 1s;
+}
+.active #section3 .cloud3 {
+  left: -100%;
+  transition-delay: 0.5s;
+}
+.active #section3 .cloud4 {
+  left: -100%;
+  transition-delay: 1.5s;
+}
+.active #section3 .bubble_small {
+  opacity: 0;
+  animation: fadeInAndOut 3s linear 0s infinite;
+}
+.active #section3 .bubble_middle {
+  opacity: 0;
+  animation: fadeInAndOut 3s linear 1s infinite;
+}
+.active #section3 .bubble_big {
+  opacity: 0;
+  animation: fadeInAndOut 3s linear 2s infinite;
+}
 /*# sourceMappingURL=effects.css.map */
