@@ -1,32 +1,67 @@
-.active .above_cloud{
-	right: 0;
-	transition-delay: 3.5s;
-}
-.active .header{
-	opacity: 1;
-    -webkit-transform: scale(1, 1) translateX(-50%);
-    transform: scale(1, 1) translateX(-50%);
-    transition-delay: 0.5s;
-}
-.active .header_bg{
-	opacity: 1;
-//  -webkit-transform: scale(1, 1) translateX(-50%);
-//  transform: scale(1, 1) translateX(-50%);
-    transition-delay: 1s;
+.active #section1{
+	.above_cloud{
+		right: 0;
+//		transition-delay: 0.5s;
+	}
+	.header{
+		opacity: 1;
+	    -webkit-transform: scale(1, 1) translateX(-50%);
+	    transform: scale(1, 1) translateX(-50%);
+	    transition-delay: 0.5s;
+	}
+	.header_bg{
+		opacity: 1;
+	    transition-delay: 1s;
+	}
+	.bubble1{
+		animation: dripAndBack 3s ease 2.5s forwards;
+	}
+	.bubble2{
+		animation: dripAndBack 3s ease 1.5s forwards;
+	}
+	.starts{
+		animation: starsTwinkling 3s linear 0.5s infinite;
+	}
+	.starts0{
+		animation: starsTwinkling 3s linear 1s infinite;
+	}
 }
 
-.active .bubble1{
-	animation: dripAndBack 3s ease 2.5s forwards;
-}
-
-.active .bubble2{
-	animation: dripAndBack 3s ease 1.5s forwards;
-}
-
-.active .starts{
-	animation: starsTwinkling 4s linear 1s infinite;
-}
-
-.active .starts0{
-	animation: starsTwinkling 4s linear 2s infinite;
+.active #section2{
+	.above_cloud{
+		right: 0;
+//		transition-delay: 1s;
+	}
+	.text1{
+		opacity: 1;
+	}
+	.text2{
+		opacity: 1;
+		transition-delay: 1s;
+	}
+	.text3{
+		.word1{
+			opacity: 1;
+			transition-delay: 1.5s;
+		}
+		.word2{
+			opacity: 1;
+			transition-delay: 2s;
+		}
+		.word3{
+			opacity: 1;
+			transition-delay: 2.5s;
+		}
+		.word4{
+			opacity: 0;
+			animation: fadeinAndSwing 1s linear 3s forwards;
+		}
+	}
+	
+	.starts{
+		animation: starsTwinkling 4s linear 1s infinite;
+	}
+	.starts0{
+		animation: starsTwinkling 4s linear 2s infinite;
+	}
 }

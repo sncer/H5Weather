@@ -1,27 +1,58 @@
-.active .above_cloud {
+.active #section1 .above_cloud {
   right: 0;
-  transition-delay: 3.5s;
 }
-.active .header {
+.active #section1 .header {
   opacity: 1;
   -webkit-transform: scale(1, 1) translateX(-50%);
   transform: scale(1, 1) translateX(-50%);
   transition-delay: 0.5s;
 }
-.active .header_bg {
+.active #section1 .header_bg {
   opacity: 1;
   transition-delay: 1s;
 }
-.active .bubble1 {
+.active #section1 .bubble1 {
   animation: dripAndBack 3s ease 2.5s forwards;
 }
-.active .bubble2 {
+.active #section1 .bubble2 {
   animation: dripAndBack 3s ease 1.5s forwards;
 }
-.active .starts {
+.active #section1 .starts {
+  animation: starsTwinkling 3s linear 0.5s infinite;
+}
+.active #section1 .starts0 {
+  animation: starsTwinkling 3s linear 1s infinite;
+}
+.active #section2 .above_cloud {
+  right: 0;
+}
+.active #section2 .text1 {
+  opacity: 1;
+}
+.active #section2 .text2 {
+  opacity: 1;
+  transition-delay: 1s;
+}
+.active #section2 .text3 .word1 {
+  opacity: 1;
+  transition-delay: 1.5s;
+}
+.active #section2 .text3 .word2 {
+  opacity: 1;
+  transition-delay: 2s;
+}
+.active #section2 .text3 .word3 {
+  opacity: 1;
+  transition-delay: 2.5s;
+}
+.active #section2 .text3 .word4 {
+  opacity: 0;
+  animation: fadeinAndSwing 1s linear 3s forwards;
+}
+.active #section2 .starts {
   animation: starsTwinkling 4s linear 1s infinite;
 }
-.active .starts0 {
+.active #section2 .starts0 {
   animation: starsTwinkling 4s linear 2s infinite;
 }
 /*# sourceMappingURL=effects.css.map */
