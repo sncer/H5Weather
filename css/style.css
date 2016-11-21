@@ -2,7 +2,7 @@
   width: 100%;
   height: 100%;
   background: url(../img/page1/Blue.png) no-repeat;
-  background-size: 100%;
+  background-size: cover;
 }
 #section1 .above_cloud {
   height: 6%;
@@ -114,7 +114,7 @@
   width: 100%;
   height: 100%;
   background: url(../img/page1/Blue.png) no-repeat;
-  background-size: 100%;
+  background-size: cover;
 }
 #section2 .above_cloud {
   height: 6%;
@@ -262,10 +262,10 @@
 }
 #section3 .bubbles {
   position: absolute;
-  top: 52%;
+  top: -2%;
   right: 35%;
   width: 12%;
-  height: 7%;
+  height: 14%;
 }
 #section3 .bubble_big {
   width: 36%;
@@ -285,21 +285,13 @@
   bottom: 0;
   right: 0;
 }
-#section3 .below_bubbles {
-  position: absolute;
-  bottom: 12%;
-  height: 33%;
-}
-#section3 .below_bubbles img {
-  width: 100%;
-}
 #section3 .cat_star_left {
   position: absolute;
   bottom: 0;
   right: 0;
   height: 45%;
 }
-#section3 .cat_star_left img {
+#section3 .cat_star_left > img {
   height: 100%;
 }
 #section3 .below_cloud {
@@ -316,7 +308,7 @@
   width: 100%;
   height: 100%;
   background: url(../img/page1/Blue.png) no-repeat;
-  background-size: 100%;
+  background-size: cover;
 }
 #section13 .above_cloud {
   height: 6%;
@@ -448,6 +440,722 @@
   bottom: 0;
 }
 #section13 .below_cloud img {
+  width: 100%;
+  height: 100%;
+}
+#section4 {
+  width: 100%;
+  height: 100%;
+  background: url(../img/page4/background.png) no-repeat;
+  background-size: cover;
+}
+#section4 .above_cloud {
+  height: 6%;
+  position: absolute;
+  top: 2%;
+  right: -100%;
+  transition: all 4s ease-in-out;
+}
+#section4 .above_cloud img {
+  height: 100%;
+}
+#section4 .light_clouds {
+  width: 100%;
+  position: absolute;
+  top: 0;
+}
+#section4 .light_clouds img {
+  width: 100%;
+}
+#section4 .second_bg {
+  width: 100%;
+  height: 63%;
+  position: absolute;
+  bottom: 0;
+  background: url(../img/page4/background2.png) no-repeat;
+  background-size: 100% auto;
+}
+#section4 .words1 {
+  height: 12%;
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  transform: translateX(-46%);
+}
+#section4 .words1 img {
+  height: 100%;
+}
+#section4 .words2 {
+  height: 3%;
+  position: absolute;
+  left: 9%;
+  top: 42%;
+}
+#section4 .words2 img {
+  height: 100%;
+}
+#section4 .words3 {
+  height: 5.5%;
+  position: absolute;
+  left: 8%;
+  bottom: 68%;
+}
+#section4 .words3 img {
+  height: 100%;
+}
+#section4 .bubbles {
+  position: absolute;
+  top: -4%;
+  right: 34%;
+  width: 11%;
+  height: 16%;
+}
+#section4 .bubble_big {
+  width: 36%;
+  position: absolute;
+  top: 5%;
+  left: 12%;
+}
+#section4 .bubble_middle {
+  width: 28%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+#section4 .bubble_small {
+  width: 15%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+#section4 .below_bubbles {
+  position: absolute;
+  bottom: 12%;
+  height: 33%;
+}
+#section4 .below_bubbles img {
+  width: 100%;
+}
+#section4 .below_light_clouds {
+  position: absolute;
+  bottom: 8%;
+  left: 50%;
+  height: 20%;
+  transform: translateX(-80%);
+}
+#section4 .below_light_clouds img {
+  height: 100%;
+}
+#section4 .cat_star_left {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 40%;
+}
+#section4 .cat_star_left > img {
+  height: 100%;
+}
+#section4 .below_cloud {
+  width: 100%;
+  height: 19%;
+  position: absolute;
+  bottom: 0;
+}
+#section4 .below_cloud img {
+  width: 100%;
+  height: 100%;
+}
+#section5 {
+  width: 100%;
+  height: 100%;
+  background: url(../img/page5/background.png) no-repeat;
+  background-size: cover;
+}
+#section5 .above_cloud {
+  height: 6%;
+  position: absolute;
+  top: 2%;
+  right: -100%;
+  transition: all 4s ease-in-out;
+}
+#section5 .above_cloud img {
+  height: 100%;
+}
+#section5 .light_clouds {
+  width: 100%;
+  position: absolute;
+  top: 19%;
+}
+#section5 .light_clouds img {
+  width: 100%;
+}
+#section5 .second_bg {
+  width: 100%;
+  height: 59%;
+  position: absolute;
+  bottom: 0;
+  background: url(../img/page5/background2.png) no-repeat;
+  background-size: 100% auto;
+}
+#section5 .bubbles {
+  position: absolute;
+  top: -4%;
+  right: 34%;
+  width: 11%;
+  height: 16%;
+}
+#section5 .bubble_big {
+  width: 36%;
+  position: absolute;
+  top: 5%;
+  left: 12%;
+}
+#section5 .bubble_middle {
+  width: 28%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+#section5 .bubble_small {
+  width: 15%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+#section5 .below_bubbles {
+  position: absolute;
+  bottom: 12%;
+  height: 33%;
+}
+#section5 .below_bubbles img {
+  width: 100%;
+}
+#section5 .below_light_clouds {
+  position: absolute;
+  bottom: 8%;
+  left: 50%;
+  height: 20%;
+  transform: translateX(-80%);
+}
+#section5 .below_light_clouds img {
+  height: 100%;
+}
+#section5 .cat_star_left {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 40%;
+}
+#section5 .cat_star_left > img {
+  height: 100%;
+}
+#section5 .below_cloud {
+  width: 100%;
+  height: 19%;
+  position: absolute;
+  bottom: 0;
+}
+#section5 .below_cloud img {
+  width: 100%;
+  height: 100%;
+}
+#section5 .content {
+  position: absolute;
+  top: 9%;
+  height: 60%;
+  width: 100%;
+}
+#section5 .title {
+  position: absolute;
+  height: 6%;
+  left: 10%;
+}
+#section5 .title img {
+  height: 100%;
+}
+#section5 .sub_title {
+  position: absolute;
+  height: 6%;
+  top: 10%;
+  left: 10%;
+}
+#section5 .sub_title img {
+  height: 100%;
+}
+#section5 .cat1 {
+  height: 20%;
+  position: absolute;
+  right: 5%;
+  top: 15%;
+}
+#section5 .cat1 img {
+  height: 100%;
+}
+#section5 .vapor1 {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  height: 44%;
+  transform: translateX(-62%);
+}
+#section5 .vapor1 img {
+  height: 100%;
+}
+#section5 .vapor2 {
+  position: absolute;
+  top: -7%;
+  left: 50%;
+  height: 80%;
+  transform: translateX(-48%);
+}
+#section5 .vapor2 img {
+  height: 100%;
+}
+#section5 .vapour_words {
+  position: absolute;
+  height: 5%;
+  top: 22%;
+  left: 32%;
+}
+#section5 .vapour_words img {
+  height: 100%;
+}
+#section5 .vapour_arrow {
+  position: absolute;
+  height: 17%;
+  top: 12%;
+  left: 32%;
+}
+#section5 .vapour_arrow img {
+  height: 100%;
+}
+#section5 .cat2 {
+  height: 18%;
+  position: absolute;
+  left: 15%;
+  top: 31%;
+}
+#section5 .cat2 img {
+  height: 100%;
+}
+#section5 .pressure_words {
+  position: absolute;
+  height: 5%;
+  top: 39%;
+  left: 32%;
+}
+#section5 .pressure_words img {
+  height: 100%;
+}
+#section5 .pressure_arrow {
+  position: absolute;
+  height: 17%;
+  top: 32%;
+  left: 13%;
+}
+#section5 .pressure_arrow img {
+  height: 100%;
+}
+#section5 .cat3 {
+  height: 17%;
+  position: absolute;
+  right: 28%;
+  top: 46%;
+}
+#section5 .cat3 img {
+  height: 100%;
+}
+#section5 .oxygen_words {
+  position: absolute;
+  height: 5%;
+  top: 55%;
+  left: 10%;
+}
+#section5 .oxygen_words img {
+  height: 100%;
+}
+#section5 .oxygen_arrow {
+  position: absolute;
+  height: 20%;
+  top: 42%;
+  right: 21%;
+}
+#section5 .oxygen_arrow img {
+  height: 100%;
+}
+#section5 .nerve_words {
+  position: absolute;
+  height: 15%;
+  top: 65%;
+  left: 10%;
+}
+#section5 .nerve_words img {
+  height: 100%;
+}
+#section5 .nerve_arrow {
+  position: absolute;
+  height: 20%;
+  top: 60%;
+  right: 38%;
+}
+#section5 .nerve_arrow img {
+  height: 100%;
+}
+#section5 .lazy {
+  position: absolute;
+  height: 5%;
+  bottom: 1%;
+  left: 10%;
+}
+#section5 .lazy img {
+  height: 100%;
+}
+#section6 {
+  width: 100%;
+  height: 100%;
+  background: url(../img/page6/background.png) no-repeat;
+  background-size: cover;
+}
+#section6 .above_cloud {
+  height: 6%;
+  position: absolute;
+  top: 2%;
+  right: -100%;
+  transition: all 4s ease-in-out;
+}
+#section6 .above_cloud img {
+  height: 100%;
+}
+#section6 .fog {
+  position: absolute;
+  top: 5%;
+  width: 100%;
+  height: 33%;
+}
+#section6 .fog img {
+  width: 100%;
+  height: 100%;
+}
+#section6 .second_bg {
+  width: 100%;
+  height: 83%;
+  position: absolute;
+  top: 0;
+}
+#section6 .second_bg img {
+  width: 100%;
+  height: 100%;
+}
+#section6 .top_clouds {
+  position: absolute;
+  top: 13%;
+  height: 18%;
+  left: 7%;
+}
+#section6 .top_clouds img {
+  height: 100%;
+}
+#section6 .content {
+  position: absolute;
+  top: 9%;
+  height: 60%;
+  width: 100%;
+}
+#section6 .title {
+  position: absolute;
+  height: 6%;
+  left: 10%;
+}
+#section6 .title img {
+  height: 100%;
+}
+#section6 .sub_title {
+  position: absolute;
+  height: 6%;
+  top: 10%;
+  left: 10%;
+}
+#section6 .sub_title img {
+  height: 100%;
+}
+#section6 .darkness_words {
+  position: absolute;
+  height: 5%;
+  top: 15%;
+  right: 30%;
+}
+#section6 .darkness_words img {
+  height: 100%;
+}
+#section6 .darkness_arrow {
+  position: absolute;
+  height: 17%;
+  top: 2%;
+  right: 22%;
+}
+#section6 .darkness_arrow img {
+  height: 100%;
+}
+#section6 .cloudlayer_words {
+  position: absolute;
+  height: 5%;
+  top: 26%;
+  left: 16%;
+}
+#section6 .cloudlayer_words img {
+  height: 100%;
+}
+#section6 .cloudlayer_arrow {
+  position: absolute;
+  height: 15%;
+  top: 25%;
+  left: 18%;
+}
+#section6 .cloudlayer_arrow img {
+  height: 100%;
+}
+#section6 .melation1 {
+  position: absolute;
+  left: 8%;
+  top: 40%;
+  height: 25%;
+}
+#section6 .melation1 img {
+  height: 100%;
+}
+#section6 .melation2 {
+  position: absolute;
+  left: 48%;
+  top: 54%;
+  height: 5%;
+}
+#section6 .melation2 img {
+  height: 100%;
+}
+#section6 .melation_arrow {
+  position: absolute;
+  left: 29%;
+  top: 52%;
+  height: 17%;
+}
+#section6 .melation_arrow img {
+  height: 100%;
+}
+#section6 .annotation {
+  position: absolute;
+  left: 5%;
+  top: 66%;
+  height: 12%;
+}
+#section6 .annotation img {
+  height: 100%;
+}
+#section6 .elements {
+  position: absolute;
+  left: 7%;
+  top: 43%;
+  height: 41%;
+}
+#section6 .elements img {
+  height: 100%;
+}
+#section6 .lazy {
+  position: absolute;
+  height: 5%;
+  bottom: 6%;
+  left: 10%;
+}
+#section6 .lazy img {
+  height: 100%;
+}
+#section6 .bubbles {
+  position: absolute;
+  top: -4%;
+  right: 34%;
+  width: 11%;
+  height: 16%;
+}
+#section6 .bubble_big {
+  width: 36%;
+  position: absolute;
+  top: 5%;
+  left: 12%;
+}
+#section6 .bubble_middle {
+  width: 28%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+#section6 .bubble_small {
+  width: 15%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+#section6 .below_bubbles {
+  position: absolute;
+  bottom: 12%;
+  height: 33%;
+}
+#section6 .below_bubbles img {
+  width: 100%;
+}
+#section6 .below_light_clouds {
+  position: absolute;
+  bottom: 8%;
+  left: 50%;
+  height: 20%;
+  transform: translateX(-80%);
+}
+#section6 .below_light_clouds img {
+  height: 100%;
+}
+#section6 .cat_star_left {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 40%;
+}
+#section6 .cat_star_left > img {
+  height: 100%;
+}
+#section6 .below_cloud {
+  width: 100%;
+  height: 19%;
+  position: absolute;
+  bottom: 0;
+}
+#section6 .below_cloud img {
+  width: 100%;
+  height: 100%;
+}
+#section7 {
+  width: 100%;
+  height: 100%;
+  background: url(../img/page7/background.png) no-repeat;
+  background-size: cover;
+}
+#section7 .above_cloud {
+  height: 6%;
+  position: absolute;
+  top: 2%;
+  right: -100%;
+  transition: all 4s ease-in-out;
+}
+#section7 .above_cloud img {
+  height: 100%;
+}
+#section7 .content {
+  position: absolute;
+  top: 9%;
+  height: 60%;
+  width: 100%;
+}
+#section7 .title {
+  position: absolute;
+  height: 6%;
+  left: 10%;
+}
+#section7 .title img {
+  height: 100%;
+}
+#section7 .sub_title {
+  position: absolute;
+  height: 6%;
+  top: 10%;
+  left: 10%;
+}
+#section7 .sub_title img {
+  height: 100%;
+}
+#section7 .words1 {
+  position: absolute;
+  height: 12%;
+  top: 20%;
+  left: 10%;
+}
+#section7 .words1 img {
+  height: 100%;
+}
+#section7 .words2 {
+  position: absolute;
+  height: 8%;
+  top: 36%;
+  left: 10%;
+}
+#section7 .words2 img {
+  height: 100%;
+}
+#section7 .cloud_line {
+  position: absolute;
+  top: 47%;
+  width: 100%;
+  height: 31%;
+}
+#section7 .cloud_line img {
+  width: 100%;
+  height: 100%;
+}
+#section7 .bubbles {
+  position: absolute;
+  top: -4%;
+  right: 34%;
+  width: 11%;
+  height: 16%;
+}
+#section7 .bubble_big {
+  width: 36%;
+  position: absolute;
+  top: 5%;
+  left: 12%;
+}
+#section7 .bubble_middle {
+  width: 28%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+#section7 .bubble_small {
+  width: 15%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+#section7 .below_bubbles {
+  position: absolute;
+  bottom: 12%;
+  height: 33%;
+}
+#section7 .below_bubbles img {
+  width: 100%;
+}
+#section7 .below_light_clouds {
+  position: absolute;
+  bottom: 8%;
+  left: 50%;
+  height: 20%;
+  transform: translateX(-80%);
+}
+#section7 .below_light_clouds img {
+  height: 100%;
+}
+#section7 .cat_star_left {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 40%;
+}
+#section7 .cat_star_left > img {
+  height: 100%;
+}
+#section7 .below_cloud {
+  width: 100%;
+  height: 19%;
+  position: absolute;
+  bottom: 0;
+}
+#section7 .below_cloud img {
   width: 100%;
   height: 100%;
 }

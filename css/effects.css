@@ -120,4 +120,16 @@
 .active #section13 .starts0 {
   animation: starsTwinkling 3s linear 1s infinite;
 }
+.active #section4 .above_cloud {
+  right: 0;
+}
+.active #section5 .above_cloud {
+  right: 0;
+}
+.active #section6 .above_cloud {
+  right: 0;
+}
+.active #section7 .above_cloud {
+  right: 0;
+}
 /*# sourceMappingURL=effects.css.map */
