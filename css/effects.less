@@ -68,7 +68,8 @@
 
 .active #section3 {
 	.text1{
-		animation: bounceInRight 1s ease 0.5s forwards;
+		opacity: 1;
+		animation: bounceInRight 1s ease 0.5s backwards;
 	}
 	.cloud1{
 		left: -100%;
@@ -88,15 +89,15 @@
 	}
 	.bubble_small{
 		opacity: 0;
-		animation: fadeInAndOut 3s linear 0s infinite;
+		animation: bubble1 3.5s linear 0s infinite;
 	}
 	.bubble_middle{
 		opacity: 0;
-		animation: fadeInAndOut 3s linear 1s infinite;
+		animation: bubble2 3.5s linear 0s infinite ;
 	}
 	.bubble_big{
 		opacity: 0;
-		animation: fadeInAndOut 3s linear 2s infinite;
+		animation: bubble3 3.5s linear 0s infinite ;
 	}
 }
 
@@ -136,30 +137,134 @@
 		animation: starsTwinkling 3s linear 1s infinite;
 	}
 }
-
+//下雨天4-7页云彩和小猫气泡动画
+.active #section4,.active #section5,.active #section6,.active #section7{
+	.above_cloud{
+		right: 0;
+	}
+	.bubble_small{
+		opacity: 0;
+		animation: bubble1 3.5s linear 0s infinite;
+	}
+	.bubble_middle{
+		opacity: 0;
+		animation: bubble2 3.5s linear 0s infinite ;
+	}
+	.bubble_big{
+		opacity: 0;
+		animation: bubble3 3.5s linear 0s infinite ;
+	}
+}
 .active #section4{
-	.above_cloud{
-		right: 0;
+	.words1{
+//		opacity: 0;
+		animation: bounceInLeft 1s 0s;
 	}
-	
+	.words2{
+		opacity: 0;
+		animation: fadeInLeft 1s 2s forwards;
+	}
+	.words3{
+		opacity: 0;
+		animation: rollIn 1s 3s forwards;
+	}
 }
 
+//下雨天5-7标题和子标题动画
+.active #section5,.active #section6,.active #section7{
+	.title{
+		opacity: 0;
+		animation: fadeInLeft 1s 0s forwards;
+	}
+	.sub_title{
+		opacity: 0;
+		animation: fadeIn 0.5s 1s forwards;
+	}
+}
 .active #section5{
-	.above_cloud{
-		right: 0;
+	.vapour_arrow{
+		opacity: 0;
+		animation: arrowUp 1s 1.5s forwards;
 	}
-	
-}
-.active #section6{
-	.above_cloud{
-		right: 0;
+	.vapour_words{
+		opacity: 0;
+		animation: fadeIn 1s 1.5s forwards;
 	}
-	
+	.pressure_arrow{
+		opacity: 0;
+		animation: arrowDown 1s 2.5s forwards;
+	}
+	.pressure_words{
+		opacity: 0;
+		animation: fadeIn 1s 2.5s forwards;
+	}
+	.oxygen_arrow{
+		opacity: 0;
+		animation: arrowDown 1s 3.5s forwards;
+	}
+	.oxygen_words{
+		opacity: 0;
+		animation: fadeIn 1s 3.5s forwards;
+	}
+	.nerve_arrow{
+		opacity: 0;
+		animation: arrowDown 1s 4.5s forwards;
+	}
+	.nerve_words{
+		opacity: 0;
+		animation: fadeIn 1s 4.5s forwards;
+	}
+	.lazy{
+		opacity: 0;
+		animation: myPulse 2s 5.5s forwards infinite;
+	}
+	.vapor1 img{
+		opacity: 0;
+		animation: vapor1 10s 0s linear infinite;
+	}
+	.vapor2 img{
+		opacity: 0;
+		animation: vapor2 10s 2s linear infinite;
+	}
 }
 
-.active #section7{
-	.above_cloud{
-		right: 0;
+.active #section6{
+	.darkness_arrow{
+		opacity: 0;
+		animation: arrowDown 1s 1.5s forwards;
 	}
-	
+	.darkness_words{
+		opacity: 0;
+		animation: fadeIn 1s 1.5s forwards;
+	}
+	.cloudlayer_arrow{
+		opacity: 0;
+		animation: arrowUp 1s 2.5s forwards;
+	}
+	.cloudlayer_words{
+		opacity: 0;
+		animation: fadeIn 1s 2.5s forwards;
+	}
+	.melation_arrow{
+		opacity: 0;
+		animation: arrowUp 1s 3.5s forwards;
+	}
+	.melation2,.melation1,.annotation{
+		opacity: 0;
+		animation: fadeIn 1s 3.5s forwards;
+	}
+	.lazy{
+		opacity: 0;
+		animation: myPulse 2s 4.5s forwards infinite;
+	}
+}
+.active #section7{
+	.words1{
+		opacity: 1;
+		animation: zoomInLeft 1.5s 1.5s backwards;
+	}
+	.words2{
+		opacity: 1;
+		animation: fadeIn 1s 3.5s backwards;
+	}
 }

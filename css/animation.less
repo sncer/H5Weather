@@ -1,5 +1,5 @@
 //第一页底衬下滑后回升的动画
-@keyframes dripAndBack{
+@keyframes dripAndBack {
 	0% {
 		opacity: 0;
 		transform: translate(-50%,0);
@@ -14,7 +14,7 @@
 	}
 }
 //第13页底衬下滑后动画
-@keyframes drip{
+@keyframes drip {
 	0% {
 		opacity: 0;
 		transform: translate(-50%,0);
@@ -25,7 +25,7 @@
 	}
 }
 //第一页背景星星闪烁动画
-@keyframes starsTwinkling{
+@keyframes starsTwinkling {
 	0% {
 		opacity: 0;
 	}
@@ -40,83 +40,146 @@
 @keyframes fadeinAndSwing {
 	from {
 		opacity: 0;
-    -webkit-transform: rotate3d(0, 0, 1, 0deg);
-    transform: rotate3d(0, 0, 1, 0deg);
-  }
-  20% {
-  	opacity: 1;
-    -webkit-transform: rotate3d(0, 0, 1, 15deg);
-    transform: rotate3d(0, 0, 1, 15deg);
-  }
-
-  40% {
-  	opacity: 1;
-    -webkit-transform: rotate3d(0, 0, 1, -10deg);
-    transform: rotate3d(0, 0, 1, -10deg);
-  }
-
-  60% {
-  	opacity: 1;
-    -webkit-transform: rotate3d(0, 0, 1, 5deg);
-    transform: rotate3d(0, 0, 1, 5deg);
-  }
-
-  80% {
-  	opacity: 1;
-    -webkit-transform: rotate3d(0, 0, 1, -5deg);
-    transform: rotate3d(0, 0, 1, -5deg);
-  }
-
-  to {
-  	opacity: 1;
-    -webkit-transform: rotate3d(0, 0, 1, 0deg);
-    transform: rotate3d(0, 0, 1, 0deg);
-  }
+		-webkit-transform: rotate3d(0, 0, 1, 0deg);
+		transform: rotate3d(0, 0, 1, 0deg);
+	}
+	20% {
+		opacity: 1;
+		-webkit-transform: rotate3d(0, 0, 1, 15deg);
+		transform: rotate3d(0, 0, 1, 15deg);
+	}
+	40% {
+		opacity: 1;
+		-webkit-transform: rotate3d(0, 0, 1, -10deg);
+		transform: rotate3d(0, 0, 1, -10deg);
+	}
+	60% {
+		opacity: 1;
+		-webkit-transform: rotate3d(0, 0, 1, 5deg);
+		transform: rotate3d(0, 0, 1, 5deg);
+	}
+	80% {
+		opacity: 1;
+		-webkit-transform: rotate3d(0, 0, 1, -5deg);
+		transform: rotate3d(0, 0, 1, -5deg);
+	}
+	to {
+		opacity: 1;
+		-webkit-transform: rotate3d(0, 0, 1, 0deg);
+		transform: rotate3d(0, 0, 1, 0deg);
+	}
 }
-//第三页，从右侧滑入
-@keyframes bounceInRight {
-  from, 60%, 75%, 90%, to {
-    -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
-    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
-  }
 
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(3000px, 0, 0);
-    transform: translate3d(3000px, 0, 0);
-  }
-
-  60% {
-    opacity: 1;
-    -webkit-transform: translate3d(-25px, 0, 0);
-    transform: translate3d(-25px, 0, 0);
-  }
-
-  75% {
-    -webkit-transform: translate3d(10px, 0, 0);
-    transform: translate3d(10px, 0, 0);
-  }
-
-  90% {
-    -webkit-transform: translate3d(-5px, 0, 0);
-    transform: translate3d(-5px, 0, 0);
-  }
-
-  to {
-  	opacity: 1;
-    -webkit-transform: none;
-    transform: none;
-  }
-}
 //第三页，小猫气泡冒出
-@keyframes fadeInAndOut {
-  from {
-    opacity: 0;
-  }
+@keyframes bubble1 {
+	from {
+		opacity: 0;
+		transform: rotate(0deg);
+	}
+	25% {
+		opacity: 0;
+		transform: rotate(0deg);
+	}
+	to {
+		opacity: 1;
+		transform: rotate(90deg);
+	}
+}
+@keyframes bubble2 {
+	from {
+		opacity: 0;
+		transform: rotate(0deg);
+	}
+	50% {
+		opacity: 0;
+		transform: rotate(0deg);
+	}
+	to {
+		opacity: 1;
+		transform: rotate(90deg);
+	}
+}
+@keyframes bubble3 {
+	from {
+		opacity: 0;
+		transform: rotate(0deg);
+	}
+	75% {
+		opacity: 0;
+		transform: rotate(0deg);
+	}
+	to {
+		opacity: 1;
+		transform: rotate(90deg);
+	}
+}
+//箭头向上动画
+@keyframes arrowUp {
+	from {
+		opacity: 0;
+		transform: translate(-50%, 50%);
+	}
+//	25% {
+//		opacity: 0;
+//		transform: rotate(0deg);
+//	}
+	to {
+		opacity: 1;
+		transform: translate(0, 0);
+	}
+}
+//箭头向下动画
+@keyframes arrowDown {
+	from {
+		opacity: 0;
+		transform: translate(-50%, -50%);
+	}
+	to {
+		opacity: 1;
+		transform: translate(0, 0);
+	}
+}
+@keyframes myPulse {
+	from {
+		opacity: 1;
+		-webkit-transform: scale3d(1, 1, 1);
+		transform: scale3d(1, 1, 1);
+	}
+	50% {
+		-webkit-transform: scale3d(1.05, 1.05, 1.05);
+		transform: scale3d(1.05, 1.05, 1.05);
+	}
+	to {
+		opacity: 1;
+		-webkit-transform: scale3d(1, 1, 1);
+		transform: scale3d(1, 1, 1);
+	}
+}
+@keyframes vapor1 {
+	from {
+		opacity: 0;
+		transform: translateY(100%);
+	}
 	50% {
 		opacity: 1;
+		transform: translateY(0);
 	}
-  to {
-    opacity: 0;
-  }
+	to {
+		opacity: 0;
+		transform: translateY(-100%);
+	}
+}
+@keyframes vapor2 {
+	from {
+		opacity: 0;
+		transform: translateY(50%);
+	}
+	50% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+	to {
+		opacity: 0;
+		transform: translateY(-50%);
+	}
 }
