@@ -226,10 +226,11 @@
   animation: fadeInDownBig 1s 0s backwards;
 }
 .active #section8 .crafts {
-  animation: flipInY 1s 1.5s backwards;
+  opacity: 0;
+  animation: fadeAndTada 1s 1.5s forwards;
 }
 .active #section8 .words2 {
-  animation: rotateInUpLeft 1s 2.5s backwards;
+  animation: rotateInUpLeft 1s 3s backwards;
 }
 .active #section9 .above_cloud {
   right: 0;
@@ -238,7 +239,8 @@
   animation: fadeInLeft 1s 0s backwards;
 }
 .active #section9 .words2 {
-  animation: rollIn 1s 1s backwards;
+  width: 100%;
+  transition-delay: 1.5s;
 }
 .active #section10 .above_cloud {
   right: 0;
@@ -274,6 +276,10 @@
 .active #section11 .words4 {
   width: 100%;
   transition-delay: 5s;
+}
+.active #section11 .white_cloud {
+  left: -25%;
+  transition-delay: 0s;
 }
 .active #section12 .above_cloud {
   right: 0;

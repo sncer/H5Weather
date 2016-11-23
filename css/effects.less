@@ -241,10 +241,11 @@
 		animation: fadeInDownBig 1s 0s backwards;
 	}
 	.crafts{
-		animation: flipInY 1s 1.5s backwards;
+		opacity: 0;
+		animation: fadeAndTada 1s 1.5s forwards;
 	}
 	.words2{
-		animation: rotateInUpLeft 1s 2.5s backwards;
+		animation: rotateInUpLeft 1s 3s backwards;
 	}
 }
 
@@ -256,7 +257,8 @@
 		animation: fadeInLeft 1s 0s backwards;
 	}
 	.words2{
-		animation: rollIn 1s 1s backwards;
+		width: 100%;
+		transition-delay: 1.5s;
 	}
 }
 
@@ -296,6 +298,10 @@
 	.words4{
 		width: 100%;
 		transition-delay: 5s;
+	}
+	.white_cloud{
+		left: -25%;
+		transition-delay: 0s;
 	}
 }
 .active #section12{
