@@ -1307,6 +1307,7 @@
   position: absolute;
   top: 62%;
   left: 53%;
+  overflow: hidden;
 }
 #section10 .snowman_arrow img {
   height: 100%;
@@ -1382,6 +1383,9 @@
   position: absolute;
   top: 57%;
   left: 7%;
+  width: 0;
+  transition: all 2s linear;
+  overflow: hidden;
 }
 #section11 .words4 img {
   height: 100%;
@@ -1413,21 +1417,23 @@
   height: 100%;
 }
 #section12 .words1 {
+  width: 100%;
   height: 3.5%;
   position: absolute;
   top: 17%;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 0;
+  text-align: center;
 }
 #section12 .words1 img {
   height: 100%;
 }
 #section12 .words2 {
+  width: 100%;
   height: 12%;
   position: absolute;
   top: 22%;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 0;
+  text-align: center;
 }
 #section12 .words2 img {
   height: 100%;

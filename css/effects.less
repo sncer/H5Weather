@@ -237,11 +237,26 @@
 	.above_cloud{
 		right: 5%;
 	}
+	.words1{
+		animation: fadeInDownBig 1s 0s backwards;
+	}
+	.crafts{
+		animation: flipInY 1s 1.5s backwards;
+	}
+	.words2{
+		animation: rotateInUpLeft 1s 2.5s backwards;
+	}
 }
 
 .active #section9{
 	.above_cloud{
 		right: 0;
+	}
+	.words1{
+		animation: fadeInLeft 1s 0s backwards;
+	}
+	.words2{
+		animation: rollIn 1s 1s backwards;
 	}
 }
 
@@ -249,8 +264,40 @@
 	.above_cloud{
 		right: 0;
 	}
+	.words1{
+		animation: lightSpeedIn 1s 0.5s backwards;
+	}
+	.words2,.snowlayer{
+		animation: fadeIn 1s 1.5s backwards;
+	}
+	.words3{
+		animation: fadeIn 1s 3s backwards;
+	}
+	.voice{
+		animation: fadeInLeft 1s 3s backwards;
+	}
+	.two_arrows{
+		animation: arrowToRight 1s 3s backwards;
+	}
+	.snowman_arrow img{
+		animation: snowman_arrow 2s 3s backwards;
+	}
 }
-
+.active #section11{
+	.words1{
+		animation: bounceInDown 1s 0.5s backwards;
+	}
+	.words2{
+		animation: fadeInRight 1s 2s backwards;
+	}
+	.words3{
+		animation: fadeInLeft 1s 3.5s backwards;
+	}
+	.words4{
+		width: 100%;
+		transition-delay: 5s;
+	}
+}
 .active #section12{
 	.above_cloud{
 		right: 0;
@@ -260,6 +307,12 @@
 	}
 	.starts0{
 		animation: starsTwinkling 3s linear 1s infinite;
+	}
+	.words1{
+		animation: rubberBand 1s 0s;
+	}
+	.words2{
+		animation: fadeIn 1.5s 1s backwards;
 	}
 }
 
