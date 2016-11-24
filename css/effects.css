@@ -330,4 +330,7 @@
 .active #section13 .starts0 {
   animation: starsTwinkling 3s linear 1s infinite;
 }
+.active .raindrops {
+  animation: raindrops 5s ease-in 0s infinite;
+}
 /*# sourceMappingURL=effects.css.map */

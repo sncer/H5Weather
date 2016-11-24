@@ -60,6 +60,8 @@
 }
 #section1 .header img {
   height: 25%;
+  margin-left: 50%;
+  transform: translateX(-50%);
 }
 #section1 .stars_bg {
   width: 100%;
@@ -1641,5 +1643,15 @@
 }
 #section13 .name img {
   height: 100%;
+}
+.rain_layer {
+  width: 100%;
+  height: 80%;
+  position: absolute;
+  top: 10%;
+  overflow: hidden;
+}
+.raindrops {
+  position: absolute;
 }
 /*# sourceMappingURL=style.css.map */

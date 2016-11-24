@@ -44,9 +44,9 @@
 			    		</div>
 			    	</div>
 			    	<div class="header">
-		    			<img src="img/page1/tian.png"/>
-		    			<img src="img/page1/qi.png"/>
-		    			<img src="img/page1/wu.png"/>
+		    			<img src="img/page1/tian.png"/><br />
+		    			<img src="img/page1/qi.png"/><br />
+		    			<img src="img/page1/wu.png"/><br />
 		    			<img src="img/page1/yu.png"/>
 		    		</div>
 		    		<div class="cat_star">
@@ -127,6 +127,7 @@
 		    <!--第4页-->
 		    <div class="section">
 		    	<div id="section4">
+		    		
 		    		<div class="above_cloud">
 			    		<img src="img/page1/Above-cloud.png"/>
 			    	</div>
@@ -138,6 +139,8 @@
 				    		<img src="img/page4/words3.png"/>
 				    	</div>
 			    	</div>
+			    	<div id="rain_page4" class="rain_layer"></div>
+			    	
 			    	<div class="words1">
 			    		<img src="img/page4/words1.png"/>
 			    	</div>
@@ -158,6 +161,7 @@
 			    	<div class="below_cloud">
 			    		<img src="img/page4/below_cloud.png"/>
 			    	</div>
+
 		    	</div>
 		    </div>
 		    <!--第5页-->
@@ -171,6 +175,7 @@
 			    	</div>
 			    	<div class="second_bg">
 			    	</div>
+			    	<div id="rain_page5" class="rain_layer"></div>
 			    	<div class="below_light_clouds">
 			    		<img src="img/page4/below_light_clouds.png"/>
 			    	</div>
@@ -255,6 +260,7 @@
 			    	<div class="below_light_clouds">
 			    		<img src="img/page4/below_light_clouds.png"/>
 			    	</div>
+			    	<div id="rain_page6" class="rain_layer"></div>
 			    	<div class="cat_star_left">
 			    		<div class="bubbles">
 				    		<img class="bubble_big" src="img/page4/z-big.png"/>
@@ -312,6 +318,7 @@
 		    		<div class="above_cloud">
 			    		<img src="img/page7/above_cloud.png"/>
 			    	</div>
+			    	<div id="rain_page7" class="rain_layer"></div>
 			    	<div class="content">
 			    		<div class="title">
 			    			<img src="img/page7/title.png"/>
@@ -551,6 +558,7 @@
 	<script src="js/jquery-2.1.4.min.js" type="text/javascript" charset="utf-8"></script>
 	<!--fullpage.js 插件所需JS文件-->
 	<script src="js/jquery.fullpage.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/rain.js" type="text/javascript" charset="utf-8"></script>
 	<script type="text/javascript">
 		$(document).ready(function() {
 		    $('#fullpage').fullpage({
@@ -558,6 +566,12 @@
 		    	anchors: ['page1','page2','page3','page4','page5','page6','page7','page8','page9','page10','page11','page12','page13'],
 		    	mode : 'wheel,touch',
 		    	animateAnchor: false,
+		    	afterLoad: function(anchorLink, index){
+					if(index == 4 || index == 5 || index == 6 || index == 7){
+						console.log(anchorLink)
+						startRain(anchorLink);
+					}
+				},
 		    });
 		});
 	</script>
