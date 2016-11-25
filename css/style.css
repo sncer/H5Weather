@@ -226,41 +226,47 @@
   height: 57%;
   position: absolute;
   top: 10%;
-  left: 100%;
+  left: 80%;
   transition: all 100s linear;
 }
 #section3 .cloud2 {
   height: 8%;
   position: absolute;
   top: 18%;
-  left: 100%;
+  left: 80%;
   transition: all 60s linear;
 }
 #section3 .cloud3 {
   height: 52%;
   position: absolute;
   top: 40%;
-  left: 40%;
+  left: 20%;
   transition: all 80s linear;
 }
 #section3 .cloud4 {
   height: 2%;
   position: absolute;
   top: 78%;
-  left: 50%;
+  left: 30%;
   transition: all 120s linear;
 }
-#section3 .content {
+#section3 .text1 {
   position: absolute;
   top: 40%;
   right: 10%;
-  width: 36%;
+  height: 3.5%;
 }
-#section3 .content img {
-  width: 100%;
+#section3 .text1 img {
+  height: 100%;
 }
-#section3 .content .text1 {
-  opacity: 0;
+#section3 .text2 {
+  position: absolute;
+  top: 45%;
+  right: 10%;
+  height: 3.5%;
+}
+#section3 .text2 img {
+  height: 100%;
 }
 #section3 .bubbles {
   position: absolute;
@@ -621,8 +627,8 @@
 #section5 .cat3 {
   height: 17%;
   position: absolute;
-  right: 28%;
   top: 46%;
+  left: 52%;
 }
 #section5 .cat3 img {
   height: 100%;
@@ -640,7 +646,7 @@
   position: absolute;
   height: 20%;
   top: 42%;
-  right: 21%;
+  left: 55%;
 }
 #section5 .oxygen_arrow img {
   height: 100%;
@@ -1310,12 +1316,40 @@
 #section10 .snowman_arrow {
   height: 40%;
   position: absolute;
-  top: 62%;
-  left: 53%;
+  top: 66%;
+  left: 50%;
   overflow: hidden;
 }
 #section10 .snowman_arrow img {
   height: 100%;
+}
+#section10 .three_arrows {
+  height: 10%;
+  position: absolute;
+  top: 66%;
+  left: 50%;
+  width: 20%;
+}
+#section10 .arrow1 {
+  height: 23%;
+  position: absolute;
+  top: 59%;
+  left: 49%;
+  overflow: hidden;
+}
+#section10 .arrow2 {
+  height: 20%;
+  position: absolute;
+  top: 59%;
+  left: 63%;
+  overflow: hidden;
+}
+#section10 .arrow3 {
+  height: 15%;
+  position: absolute;
+  top: 59%;
+  left: 76%;
+  overflow: hidden;
 }
 #section11 {
   width: 100%;
@@ -1400,11 +1434,10 @@
   position: absolute;
   top: 62%;
   left: 25%;
-  transition: all 60s;
+  transition: all 30s;
 }
 #section11 .white_cloud img {
   height: 100%;
-  mix-blend-mode: screen;
 }
 #section12 {
   width: 100%;
@@ -1535,35 +1568,8 @@
 #section13 .bubble2 {
   height: 100%;
   position: absolute;
-  top: 2%;
-  left: 51%;
-  transition: all 1s;
-  transform: translateX(-50%);
-  opacity: 0;
-}
-#section13 .bubble3 {
-  height: 100%;
-  position: absolute;
-  top: 2%;
+  top: 10%;
   left: 48%;
-  transition: all 1s;
-  transform: translateX(-50%);
-  opacity: 0;
-}
-#section13 .bubble4 {
-  height: 97%;
-  position: absolute;
-  top: 16%;
-  left: 48%;
-  transition: all 1s;
-  transform: translateX(-50%);
-  opacity: 0;
-}
-#section13 .bubble5 {
-  height: 90%;
-  position: absolute;
-  top: 16%;
-  left: 50%;
   transition: all 1s;
   transform: translateX(-50%);
   opacity: 0;
@@ -1653,5 +1659,22 @@
 }
 .raindrops {
   position: absolute;
+}
+#ripples_layer {
+  width: 100%;
+  height: 30%;
+  position: absolute;
+  top: 35%;
+}
+.ripple {
+  opacity: 0;
+  position: absolute;
+}
+.snow_layer {
+  width: 100%;
+  height: 80%;
+  position: absolute;
+  top: 10%;
+  overflow: hidden;
 }
 /*# sourceMappingURL=style.css.map */

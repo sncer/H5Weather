@@ -228,40 +228,46 @@
 		height: 57%;
 		position: absolute;
 		top: 10%;
-		left: 100%;
+		left: 80%;
 		transition: all 100s linear;
 	}
 	.cloud2{
 		height: 8%;
 		position: absolute;
 		top: 18%;
-		left: 100%;
+		left: 80%;
 		transition: all 60s linear;
 	}
 	.cloud3{
 		height: 52%;
 		position: absolute;
 		top: 40%;
-		left: 40%;
+		left: 20%;
 		transition: all 80s linear;
 	}
 	.cloud4{
 		height: 2%;
 		position: absolute;
 		top: 78%;
-		left: 50%;
+		left: 30%;
 		transition: all 120s linear;
 	}
-	.content{
+	.text1{
 		position: absolute;
 		top: 40%;
 		right: 10%;
-		width: 36%;
+		height: 3.5%;
 		img{
-			width: 100%;
+			height: 100%;
 		}
-		.text1{
-			opacity: 0;
+	}
+	.text2{
+		position: absolute;
+		top: 45%;
+		right: 10%;
+		height: 3.5%;
+		img{
+			height: 100%;
 		}
 	}
 	.bubbles{
@@ -633,8 +639,9 @@
 	.cat3{
 		height: 17%;
 		position: absolute;
-		right: 28%;
 		top: 46%;
+		left: 52%;
+		
 		img{
 			height: 100%;
 		}
@@ -652,7 +659,7 @@
 		position: absolute;
 		height: 20%;
 		top: 42%;
-		right: 21%;
+		left: 55%;
 		img{
 			height: 100%;
 		}
@@ -1325,12 +1332,42 @@
 	.snowman_arrow{
 		height: 40%;
 		position: absolute;
-		top: 62%;
-		left: 53%;
+		top: 66%;
+		left: 50%;
 		overflow: hidden;
 		img{
 			height: 100%;
 		}
+	}
+	.three_arrows{
+		height: 10%;
+		position: absolute;
+		top: 66%;
+		left: 50%;
+		width: 20%;
+	}
+	.arrow1{
+		height: 23%;
+		position: absolute;
+		top: 59%;
+		left: 49%;
+		overflow: hidden;
+	}
+	.arrow2{
+		height: 20%;
+		position: absolute;
+		top: 59%;
+		left: 63%;
+		overflow: hidden;
+		
+	}
+	.arrow3{
+		height: 15%;
+		position: absolute;
+		top: 59%;
+		left: 76%;
+		overflow: hidden;
+		
 	}
 }
 #section11{
@@ -1415,10 +1452,9 @@
 		position: absolute;
 		top: 62%;
 		left: 25%;
-		transition: all 60s;
+		transition: all 30s;
 		img{
 			height: 100%;
-			mix-blend-mode: screen;
 		}
 	}
 }
@@ -1558,39 +1594,13 @@
 	.bubble2{
 		height: 100%;
 		position: absolute;
-		top: 2%;
-		left: 51%;
-		transition: all 1s;
-		transform: translateX(-50%);
-		opacity: 0;
-	}
-	.bubble3{
-		height: 100%;
-		position: absolute;
-		top: 2%;
+		top: 10%;
 		left: 48%;
 		transition: all 1s;
 		transform: translateX(-50%);
 		opacity: 0;
 	}
-	.bubble4{
-		height: 97%;
-		position: absolute;
-		top: 16%;
-		left: 48%;
-		transition: all 1s;
-		transform: translateX(-50%);
-		opacity: 0;
-	}
-	.bubble5{
-		height: 90%;
-		position: absolute;
-		top: 16%;
-		left: 50%;
-		transition: all 1s;
-		transform: translateX(-50%);
-		opacity: 0;
-	}
+
 	.header{
 		padding-top: 2%;
 		width: 12%;
@@ -1668,7 +1678,7 @@
 		}
 	}
 }
-
+//雨层
 .rain_layer{
 	width: 100%;
 	height: 80%;
@@ -1676,8 +1686,26 @@
 	top: 10%;
 	overflow: hidden;
 }
-
+//雨滴
 .raindrops{
 	position: absolute;
 }
+//涟漪层
+#ripples_layer{
+	width: 100%;
+	height: 30%;
+	position: absolute;
+	top: 35%;
+}
+.ripple{
+	opacity: 0;
+	position: absolute;
+}
 
+.snow_layer{
+	width: 100%;
+	height: 80%;
+	position: absolute;
+	top: 10%;
+	overflow: hidden;
+}

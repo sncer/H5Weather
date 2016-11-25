@@ -108,7 +108,8 @@
 						</div>
 					</div>
 		    		<div class="content">
-			    		<p class="text1"><img src="img/page3/Words.png"/></p>
+			    		<p class="text1"><img src="img/page3/line1.png"/></p>
+			    		<p class="text2"><img src="img/page3/line2.png"/></p>
 			    	</div>
 			    	
 			    	<div class="cat_star_left">
@@ -139,7 +140,9 @@
 				    		<img src="img/page4/words3.png"/>
 				    	</div>
 			    	</div>
-			    	<div id="rain_page4" class="rain_layer"></div>
+			    	<div id="rain_page4" class="rain_layer">
+			    		<!--<img class="raindrops" style="left: 10% ;top: 20%; height: 10%;" src="img/page4/small-raindrop.png"/>-->
+			    	</div>
 			    	
 			    	<div class="words1">
 			    		<img src="img/page4/words1.png"/>
@@ -319,6 +322,9 @@
 			    		<img src="img/page7/above_cloud.png"/>
 			    	</div>
 			    	<div id="rain_page7" class="rain_layer"></div>
+			    	<div id="ripples_layer">
+			    		<!--<img class="ripple" style="left: 10%; top: 10%;" src="img/page7/ripple.png"/>-->
+			    	</div>
 			    	<div class="content">
 			    		<div class="title">
 			    			<img src="img/page7/title.png"/>
@@ -358,6 +364,7 @@
 		    		<div class="above_cloud">
 			    		<img src="img/page8/above_cloud.png"/>
 			    	</div>
+			    	<canvas id="snow_page8" class="snow_layer"></canvas>
 			    	<div class="words1">
 			    		<img src="img/page8/words1.png"/>
 			    	</div>
@@ -384,6 +391,7 @@
 		    		<div class="above_cloud">
 			    		<img src="img/page1/Above-cloud.png"/>
 			    	</div>
+			    	<canvas id="snow_page9" class="snow_layer"></canvas>
 			    	<div class="words1">
 			    		<img src="img/page9/words1.png"/>
 			    	</div>
@@ -410,6 +418,7 @@
 		    		<div class="above_cloud">
 			    		<img src="img/page10/above_cloud.png"/>
 			    	</div>
+			    	<canvas id="snow_page10" class="snow_layer"></canvas>
 			    	<div class="cottage">
 			    		<img src="img/page10/cottage.png"/>
 			    	</div>
@@ -446,7 +455,16 @@
 				    		<img src="img/page10/voice.png"/>
 				    	</div>
 				    	<div class="snowman_arrow">
-				    		<img src="img/page10/snowman-arrow.png"/>
+				    		<img src="img/page10/arrows.png"/>
+				    	</div>
+				    	<div class="arrow1">
+				    		<img src="img/page10/arrow1.png"/>
+				    	</div>
+				    	<div class="arrow2">
+				    		<img src="img/page10/arrow2.png"/>
+				    	</div>
+				    	<div class="arrow3">
+				    		<img src="img/page10/arrow3.png"/>
 				    	</div>
 			    	</div>
 			    	
@@ -524,20 +542,12 @@
 			    	</div>
 			    	<div class="header_bg">
 			    		<div class="bubble1">
-			    			<img src="img/page13/Bubble1.png"/>
+			    			<img src="img/page13/bubble1.png"/>
 			    		</div>
 			    		<div class="bubble2">
-			    			<img src="img/page13/Bubble2.png"/>
+			    			<img src="img/page13/bubble2.png"/>
 			    		</div>
-			    		<div class="bubble3">
-			    			<img src="img/page13/Bubble3.png"/>
-			    		</div>
-			    		<div class="bubble4">
-			    			<img src="img/page13/Bubble4.png"/>
-			    		</div>
-			    		<div class="bubble5">
-			    			<img src="img/page13/Bubble5.png"/>
-			    		</div>
+			    		
 			    	</div>
 			    	<div class="header">
 		    			<img src="img/page13/The-end.png"/>
@@ -558,7 +568,7 @@
 	<script src="js/jquery-2.1.4.min.js" type="text/javascript" charset="utf-8"></script>
 	<!--fullpage.js 插件所需JS文件-->
 	<script src="js/jquery.fullpage.min.js" type="text/javascript" charset="utf-8"></script>
-	<script src="js/rain.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/effects.js" type="text/javascript" charset="utf-8"></script>
 	<script type="text/javascript">
 		$(document).ready(function() {
 		    $('#fullpage').fullpage({
@@ -567,11 +577,31 @@
 		    	mode : 'wheel,touch',
 		    	animateAnchor: false,
 		    	afterLoad: function(anchorLink, index){
+		    		//下雨
 					if(index == 4 || index == 5 || index == 6 || index == 7){
-						console.log(anchorLink)
-						startRain(anchorLink);
+						setTimeout("startRain("+index+")", 500);
 					}
+					//涟漪
+					if(index == 7){
+						startRipples();
+					}
+					//下雪
+					if(index == 8 || index == 9 || index == 10){
+						startSnow(index);
+					}
+
+					
 				},
+				onLeave: function(index, direction){
+					if(index == 4 || index == 5 || index == 6 || index == 7){
+						//清空雨滴
+						clearRain(index);
+					}
+					if(index == 4 || index == 5 || index == 6 || index == 7){
+						//清空涟漪
+						clearRipples();
+					}
+				}
 		    });
 		});
 	</script>

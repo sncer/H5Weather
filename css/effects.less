@@ -42,19 +42,19 @@
 	.text3{
 		.word1{
 			opacity: 1;
-			transition-delay: 1.5s;
+			transition-delay: 2s;
 		}
 		.word2{
 			opacity: 1;
-			transition-delay: 2s;
+			transition-delay: 3s;
 		}
 		.word3{
 			opacity: 1;
-			transition-delay: 2.5s;
+			transition-delay: 4s;
 		}
 		.word4{
 			opacity: 0;
-			animation: fadeinAndSwing 1s linear 3s forwards;
+			animation: fadeIn 1s linear 4s forwards;
 		}
 	}
 	
@@ -69,11 +69,15 @@
 .active #section3 {
 	.text1{
 		opacity: 1;
-		animation: bounceInRight 1s ease 0.5s backwards;
+		animation: fadeIn 1s ease 0.5s backwards;
+	}
+	.text2{
+		opacity: 1;
+		animation: fadeIn 1s ease 1.5s backwards;
 	}
 	.cloud1{
 		left: -100%;
-		transition-delay: 2s;
+		transition-delay: 0.5s;
 	}
 	.cloud2{
 		left: -100%;
@@ -130,7 +134,7 @@
 	}
 	.words3{
 		opacity: 0;
-		animation: rollIn 1s 3s forwards;
+		animation: bounceIn 1s 3s forwards;
 	}
 }
 
@@ -225,7 +229,7 @@
 .active #section7{
 	.words1{
 		opacity: 1;
-		animation: zoomInLeft 1.5s 1.5s backwards;
+		animation: fadeInLeftBig 1s 1.5s backwards;
 	}
 	.words2{
 		opacity: 1;
@@ -242,7 +246,7 @@
 	}
 	.crafts{
 		opacity: 0;
-		animation: fadeAndTada 1s 1.5s forwards;
+		animation: rotateIn 1s 1.5s forwards;
 	}
 	.words2{
 		animation: rotateInUpLeft 1s 3s backwards;
@@ -281,8 +285,17 @@
 	.two_arrows{
 		animation: arrowToRight 1s 3s backwards;
 	}
-	.snowman_arrow img{
-		animation: snowman_arrow 2s 3s backwards;
+	.snowman_arrow{
+		animation: fadeIn 2s 3s backwards;
+	}
+	.arrow1 img{
+		animation: arrowToRight 0.5s 3.5s backwards;
+	}
+	.arrow2 img{
+		animation: arrowToRight 0.5s 4s backwards;
+	}
+	.arrow3 img{
+		animation: arrowToRight 0.5s 4.5s backwards;
 	}
 }
 .active #section11{
@@ -337,20 +350,12 @@
 	    transition-delay: 1s;
 	}
 	.bubble1{
-		animation: drip 3s ease 1.5s forwards;
+		animation: dripAndBack 3s ease 1.5s forwards;
 	}
 	.bubble2{
-		animation: drip 3s ease 1.5s forwards;
+		animation: dripAndBack 3s ease 2.5s forwards;
 	}
-	.bubble3{
-		animation: drip 3s ease 1s forwards;
-	}
-	.bubble4{
-		animation: drip 3s ease 1.5s forwards;
-	}
-	.bubble5{
-		animation: drip 3s ease 1s forwards;
-	}
+	
 	.starts{
 		animation: starsTwinkling 3s linear 0.5s infinite;
 	}
@@ -361,4 +366,8 @@
 //下雨页面，单个雨滴动画
 .active .raindrops{
 	animation: raindrops 5s ease-in 0s infinite;
+}
+//涟漪页面，单个涟漪动画
+.active .ripple{
+	animation: ripple 5s linear 0s infinite;
 }

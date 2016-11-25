@@ -35,19 +35,19 @@
 }
 .active #section2 .text3 .word1 {
   opacity: 1;
-  transition-delay: 1.5s;
+  transition-delay: 2s;
 }
 .active #section2 .text3 .word2 {
   opacity: 1;
-  transition-delay: 2s;
+  transition-delay: 3s;
 }
 .active #section2 .text3 .word3 {
   opacity: 1;
-  transition-delay: 2.5s;
+  transition-delay: 4s;
 }
 .active #section2 .text3 .word4 {
   opacity: 0;
-  animation: fadeinAndSwing 1s linear 3s forwards;
+  animation: fadeIn 1s linear 4s forwards;
 }
 .active #section2 .starts {
   animation: starsTwinkling 4s linear 1s infinite;
@@ -57,11 +57,15 @@
 }
 .active #section3 .text1 {
   opacity: 1;
-  animation: bounceInRight 1s ease 0.5s backwards;
+  animation: fadeIn 1s ease 0.5s backwards;
+}
+.active #section3 .text2 {
+  opacity: 1;
+  animation: fadeIn 1s ease 1.5s backwards;
 }
 .active #section3 .cloud1 {
   left: -100%;
-  transition-delay: 2s;
+  transition-delay: 0.5s;
 }
 .active #section3 .cloud2 {
   left: -100%;
@@ -123,7 +127,7 @@
 }
 .active #section4 .words3 {
   opacity: 0;
-  animation: rollIn 1s 3s forwards;
+  animation: bounceIn 1s 3s forwards;
 }
 .active #section5 .title,
 .active #section6 .title,
@@ -213,7 +217,7 @@
 }
 .active #section7 .words1 {
   opacity: 1;
-  animation: zoomInLeft 1.5s 1.5s backwards;
+  animation: fadeInLeftBig 1s 1.5s backwards;
 }
 .active #section7 .words2 {
   opacity: 1;
@@ -227,7 +231,7 @@
 }
 .active #section8 .crafts {
   opacity: 0;
-  animation: fadeAndTada 1s 1.5s forwards;
+  animation: rotateIn 1s 1.5s forwards;
 }
 .active #section8 .words2 {
   animation: rotateInUpLeft 1s 3s backwards;
@@ -261,8 +265,17 @@
 .active #section10 .two_arrows {
   animation: arrowToRight 1s 3s backwards;
 }
-.active #section10 .snowman_arrow img {
-  animation: snowman_arrow 2s 3s backwards;
+.active #section10 .snowman_arrow {
+  animation: fadeIn 2s 3s backwards;
+}
+.active #section10 .arrow1 img {
+  animation: arrowToRight 0.5s 3.5s backwards;
+}
+.active #section10 .arrow2 img {
+  animation: arrowToRight 0.5s 4s backwards;
+}
+.active #section10 .arrow3 img {
+  animation: arrowToRight 0.5s 4.5s backwards;
 }
 .active #section11 .words1 {
   animation: bounceInDown 1s 0.5s backwards;
@@ -310,19 +323,10 @@
   transition-delay: 1s;
 }
 .active #section13 .bubble1 {
-  animation: drip 3s ease 1.5s forwards;
+  animation: dripAndBack 3s ease 1.5s forwards;
 }
 .active #section13 .bubble2 {
-  animation: drip 3s ease 1.5s forwards;
-}
-.active #section13 .bubble3 {
-  animation: drip 3s ease 1s forwards;
-}
-.active #section13 .bubble4 {
-  animation: drip 3s ease 1.5s forwards;
-}
-.active #section13 .bubble5 {
-  animation: drip 3s ease 1s forwards;
+  animation: dripAndBack 3s ease 2.5s forwards;
 }
 .active #section13 .starts {
   animation: starsTwinkling 3s linear 0.5s infinite;
@@ -332,5 +336,8 @@
 }
 .active .raindrops {
   animation: raindrops 5s ease-in 0s infinite;
+}
+.active .ripple {
+  animation: ripple 5s linear 0s infinite;
 }
 /*# sourceMappingURL=effects.css.map */
