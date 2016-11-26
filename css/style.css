@@ -1677,4 +1677,26 @@
   top: 10%;
   overflow: hidden;
 }
+.more_arrow_right {
+  position: absolute;
+  right: 7%;
+  bottom: 18%;
+  height: 8%;
+  opacity: 0;
+  transition: all 2s;
+}
+.more_arrow_right img {
+  height: 100%;
+}
+.more_arrow_left {
+  position: absolute;
+  left: 7%;
+  bottom: 18%;
+  height: 8%;
+  opacity: 0;
+  transition: all 2s;
+}
+.more_arrow_left img {
+  height: 100%;
+}
 /*# sourceMappingURL=style.css.map */

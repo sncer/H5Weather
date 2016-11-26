@@ -55,6 +55,9 @@
 		    		<div class="below_cloud">
 		    			<img src="img/page1/below-cloud.png"/>
 		    		</div>
+		    		<div class="more_arrow_right">
+		    			<img src="img/more_arrow1.png"/>
+		    		</div>
 		    	</div>
 		    	
 		    </div>
@@ -87,6 +90,9 @@
 			    	</div>
 		    		<div class="below_cloud">
 		    			<img src="img/page1/below-cloud.png"/>
+		    		</div>
+		    		<div class="more_arrow_right">
+		    			<img src="img/more_arrow1.png"/>
 		    		</div>
 		    	</div>
 		    </div>
@@ -123,6 +129,9 @@
 			    	<div class="below_cloud">
 			    		<img src="img/page3/below-cloud.png"/>
 			    	</div>
+			    	<div class="more_arrow_left">
+		    			<img src="img/more_arrow2.png"/>
+		    		</div>
 		    	</div>
 		    </div>
 		    <!--第4页-->
@@ -164,7 +173,9 @@
 			    	<div class="below_cloud">
 			    		<img src="img/page4/below_cloud.png"/>
 			    	</div>
-
+					<div class="more_arrow_left">
+		    			<img src="img/more_arrow1.png"/>
+		    		</div>
 		    	</div>
 		    </div>
 		    <!--第5页-->
@@ -243,6 +254,9 @@
 		    				<img src="img/page5/lazy.png"/>
 		    			</div>
 			    	</div>
+			    	<div class="more_arrow_left">
+		    			<img src="img/more_arrow1.png"/>
+		    		</div>
 		    	</div>
 		    </div>
 		    <!--第6页-->
@@ -313,6 +327,9 @@
 		    				<img src="img/page5/lazy.png"/>
 		    			</div>
 			    	</div>
+			    	<div class="more_arrow_left">
+		    			<img src="img/more_arrow1.png"/>
+		    		</div>
 		    	</div>
 		    </div>
 		    <!--第7页-->
@@ -356,6 +373,9 @@
 			    	<div class="below_cloud">
 			    		<img src="img/page7/below_clouds.png"/>
 			    	</div>
+			    	<div class="more_arrow_left">
+		    			<img src="img/more_arrow1.png"/>
+		    		</div>
 		    	</div>
 		    </div>
 		    <!--第8页-->
@@ -383,6 +403,9 @@
 			    	<div class="below_cloud">
 			    		<img src="img/page8/below_clouds.png"/>
 			    	</div>
+			    	<div class="more_arrow_left">
+		    			<img src="img/more_arrow1.png"/>
+		    		</div>
 		    	</div>
 		    </div>
 		    <!--第9页-->
@@ -410,6 +433,9 @@
 			    	<div class="below_cloud">
 			    		<img src="img/page1/below-cloud.png"/>
 			    	</div>
+			    	<div class="more_arrow_left">
+		    			<img src="img/more_arrow3.png"/>
+		    		</div>
 		    	</div>
 		    </div>
 		    <!--第10页-->
@@ -467,7 +493,9 @@
 				    		<img src="img/page10/arrow3.png"/>
 				    	</div>
 			    	</div>
-			    	
+			    	<div class="more_arrow_left">
+		    			<img src="img/more_arrow3.png"/>
+		    		</div>
 		    	</div>
 		    </div>
 		    <!--第11页-->
@@ -497,6 +525,9 @@
 			    	<div class="white_cloud">
 			    		<img src="img/page11/white_cloud.png"/>
 			    	</div>
+			    	<div class="more_arrow_left">
+		    			<img src="img/more_arrow3.png"/>
+		    		</div>
 		    	</div>
 		    </div>
 		    
@@ -522,6 +553,9 @@
 		    		</div>
 		    		<div class="below_cloud">
 		    			<img src="img/page1/below-cloud.png"/>
+		    		</div>
+		    		<div class="more_arrow_right">
+		    			<img src="img/more_arrow1.png"/>
 		    		</div>
 		    	</div>
 		    </div>
@@ -600,6 +634,10 @@
 					if(index == 4 || index == 5 || index == 6 || index == 7){
 						//清空涟漪
 						clearRipples();
+					}
+					//清空下雪
+					if(index == 8 || index == 9 || index == 10){
+						clearSnow(index);
 					}
 				}
 		    });

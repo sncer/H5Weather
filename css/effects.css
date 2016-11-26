@@ -340,4 +340,10 @@
 .active .ripple {
   animation: ripple 5s linear 0s infinite;
 }
+.active .more_arrow_left,
+.active .more_arrow_right {
+  opacity: 1;
+  transition-delay: 5s;
+  animation: float 4s linear 5s infinite;
+}
 /*# sourceMappingURL=effects.css.map */

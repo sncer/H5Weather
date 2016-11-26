@@ -1,5 +1,8 @@
 var rainTimer = null;
 var rippleTimer = null;
+var snowTimer = null;
+var particles = [];		//雪花颗粒
+
 //开始下雨
 function startRain(index){
 
@@ -69,14 +72,15 @@ function startSnow(index){
 	var ctx = canvas.getContext("2d");
 	
 	//canvas dimensions
-	var W = window.innerWidth;
-	var H = window.innerHeight;
+	var W = canvas.offsetWidth;
+	var H = canvas.offsetHeight;
 	canvas.width = W;
 	canvas.height = H;
 	
+	
 	//snowflake particles
 	var mp = 50; //max particles
-	var particles = [];
+	particles = [];	//清空之前的雪花粒子
 	for(var i = 0; i < mp; i++)
 	{
 		particles.push({
@@ -147,10 +151,20 @@ function startSnow(index){
 	}
 	
 	//animation loop
-	setInterval(draw, 33);
+	snowTimer = setInterval(draw, 33);
 }
 
 //清空下雪
 function clearSnow(index){
+	clearInterval(snowTimer);
+	//canvas init
+	var canvas = document.getElementById("snow_page"+index);
+	var ctx = canvas.getContext("2d");
+	//canvas dimensions
+	var W = canvas.offsetWidth;
+	var H = canvas.offsetHeight;
+	canvas.width = W;
+	canvas.height = H;
 	
+	ctx.clearRect(0, 0, W, H);
 }
