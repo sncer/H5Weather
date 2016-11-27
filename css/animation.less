@@ -1,30 +1,72 @@
-//第一页底衬下滑后回升的动画
-@keyframes dripAndBack {
+@-webkit-keyframes dripAndBack {
 	0% {
 		opacity: 0;
-		transform: translate(-50%,0);
+		-webkit-transform: translate(-50%,0);
+		        transform: translate(-50%,0);
 	}
 	50% {
 		opacity: 1;
-		transform: translate(-50%,10%);
+		-webkit-transform: translate(-50%,10%);
+		        transform: translate(-50%,10%);
 	}
 	100% {
 		opacity: 1;
-		transform: translate(-50%,0);
+		-webkit-transform: translate(-50%,0);
+		        transform: translate(-50%,0);
 	}
 }
-//第13页底衬下滑后动画
+@keyframes dripAndBack {
+	0% {
+		opacity: 0;
+		-webkit-transform: translate(-50%,0);
+		        transform: translate(-50%,0);
+	}
+	50% {
+		opacity: 1;
+		-webkit-transform: translate(-50%,10%);
+		        transform: translate(-50%,10%);
+	}
+	100% {
+		opacity: 1;
+		-webkit-transform: translate(-50%,0);
+		        transform: translate(-50%,0);
+	}
+}
+@-webkit-keyframes drip {
+	0% {
+		opacity: 0;
+		-webkit-transform: translate(-50%,0);
+		        transform: translate(-50%,0);
+	}
+	100% {
+		opacity: 1;
+		-webkit-transform: translate(-50%,10%);
+		        transform: translate(-50%,10%);
+	}
+}
 @keyframes drip {
 	0% {
 		opacity: 0;
-		transform: translate(-50%,0);
+		-webkit-transform: translate(-50%,0);
+		        transform: translate(-50%,0);
 	}
 	100% {
 		opacity: 1;
-		transform: translate(-50%,10%);
+		-webkit-transform: translate(-50%,10%);
+		        transform: translate(-50%,10%);
 	}
 }
-//第一页背景星星闪烁动画
+@-webkit-keyframes starsTwinkling {
+	0% {
+		opacity: 0;
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
 @keyframes starsTwinkling {
 	0% {
 		opacity: 0;
@@ -36,7 +78,38 @@
 		opacity: 0;
 	}
 }
-//第二页“日常生活”抖动动画
+@-webkit-keyframes fadeinAndSwing {
+	from {
+		opacity: 0;
+		-webkit-transform: rotate3d(0, 0, 1, 0deg);
+		transform: rotate3d(0, 0, 1, 0deg);
+	}
+	20% {
+		opacity: 1;
+		-webkit-transform: rotate3d(0, 0, 1, 15deg);
+		transform: rotate3d(0, 0, 1, 15deg);
+	}
+	40% {
+		opacity: 1;
+		-webkit-transform: rotate3d(0, 0, 1, -10deg);
+		transform: rotate3d(0, 0, 1, -10deg);
+	}
+	60% {
+		opacity: 1;
+		-webkit-transform: rotate3d(0, 0, 1, 5deg);
+		transform: rotate3d(0, 0, 1, 5deg);
+	}
+	80% {
+		opacity: 1;
+		-webkit-transform: rotate3d(0, 0, 1, -5deg);
+		transform: rotate3d(0, 0, 1, -5deg);
+	}
+	to {
+		opacity: 1;
+		-webkit-transform: rotate3d(0, 0, 1, 0deg);
+		transform: rotate3d(0, 0, 1, 0deg);
+	}
+}
 @keyframes fadeinAndSwing {
 	from {
 		opacity: 0;
@@ -70,12 +143,34 @@
 	}
 }
 
-//第三页，小猫气泡冒出
+@-webkit-keyframes bubble1 {
+	from {
+		opacity: 0;
+	}
+	25% {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
 @keyframes bubble1 {
 	from {
 		opacity: 0;
 	}
 	25% {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+@-webkit-keyframes bubble2 {
+	from {
+		opacity: 0;
+	}
+	50% {
 		opacity: 0;
 	}
 	to {
@@ -93,6 +188,17 @@
 		opacity: 1;
 	}
 }
+@-webkit-keyframes bubble3 {
+	from {
+		opacity: 0;
+	}
+	75% {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
 @keyframes bubble3 {
 	from {
 		opacity: 0;
@@ -104,30 +210,68 @@
 		opacity: 1;
 	}
 }
-//箭头向上动画
+@-webkit-keyframes arrowUp {
+	from {
+		opacity: 0;
+		-webkit-transform: translate(-50%, 50%);
+		        transform: translate(-50%, 50%);
+	}
+	to {
+		opacity: 1;
+		-webkit-transform: translate(0, 0);
+		        transform: translate(0, 0);
+	}
+}
 @keyframes arrowUp {
 	from {
 		opacity: 0;
-		transform: translate(-50%, 50%);
+		-webkit-transform: translate(-50%, 50%);
+		        transform: translate(-50%, 50%);
 	}
-//	25% {
-//		opacity: 0;
-//		transform: rotate(0deg);
-//	}
 	to {
 		opacity: 1;
-		transform: translate(0, 0);
+		-webkit-transform: translate(0, 0);
+		        transform: translate(0, 0);
 	}
 }
-//箭头向下动画
+@-webkit-keyframes arrowDown {
+	from {
+		opacity: 0;
+		-webkit-transform: translate(-50%, -50%);
+		        transform: translate(-50%, -50%);
+	}
+	to {
+		opacity: 1;
+		-webkit-transform: translate(0, 0);
+		        transform: translate(0, 0);
+	}
+}
 @keyframes arrowDown {
 	from {
 		opacity: 0;
-		transform: translate(-50%, -50%);
+		-webkit-transform: translate(-50%, -50%);
+		        transform: translate(-50%, -50%);
 	}
 	to {
 		opacity: 1;
-		transform: translate(0, 0);
+		-webkit-transform: translate(0, 0);
+		        transform: translate(0, 0);
+	}
+}
+@-webkit-keyframes myPulse {
+	from {
+		opacity: 1;
+		-webkit-transform: scale3d(1, 1, 1);
+		transform: scale3d(1, 1, 1);
+	}
+	50% {
+		-webkit-transform: scale3d(1.05, 1.05, 1.05);
+		transform: scale3d(1.05, 1.05, 1.05);
+	}
+	to {
+		opacity: 1;
+		-webkit-transform: scale3d(1, 1, 1);
+		transform: scale3d(1, 1, 1);
 	}
 }
 @keyframes myPulse {
@@ -146,55 +290,154 @@
 		transform: scale3d(1, 1, 1);
 	}
 }
-@keyframes vapor1 {
+@-webkit-keyframes vapor1 {
 	from {
 		opacity: 0;
-		transform: translateY(100%);
+		-webkit-transform: translateY(100%);
+		        transform: translateY(100%);
 	}
 	50% {
 		opacity: 1;
-		transform: translateY(0);
+		-webkit-transform: translateY(0);
+		        transform: translateY(0);
 	}
 	to {
 		opacity: 0;
-		transform: translateY(-100%);
+		-webkit-transform: translateY(-100%);
+		        transform: translateY(-100%);
+	}
+}
+@keyframes vapor1 {
+	from {
+		opacity: 0;
+		-webkit-transform: translateY(100%);
+		        transform: translateY(100%);
+	}
+	50% {
+		opacity: 1;
+		-webkit-transform: translateY(0);
+		        transform: translateY(0);
+	}
+	to {
+		opacity: 0;
+		-webkit-transform: translateY(-100%);
+		        transform: translateY(-100%);
+	}
+}
+@-webkit-keyframes vapor2 {
+	from {
+		opacity: 0;
+		-webkit-transform: translateY(50%);
+		        transform: translateY(50%);
+	}
+	50% {
+		opacity: 1;
+		-webkit-transform: translateY(0);
+		        transform: translateY(0);
+	}
+	to {
+		opacity: 0;
+		-webkit-transform: translateY(-50%);
+		        transform: translateY(-50%);
 	}
 }
 @keyframes vapor2 {
 	from {
 		opacity: 0;
-		transform: translateY(50%);
+		-webkit-transform: translateY(50%);
+		        transform: translateY(50%);
 	}
 	50% {
 		opacity: 1;
-		transform: translateY(0);
+		-webkit-transform: translateY(0);
+		        transform: translateY(0);
 	}
 	to {
 		opacity: 0;
-		transform: translateY(-50%);
+		-webkit-transform: translateY(-50%);
+		        transform: translateY(-50%);
+	}
+}
+
+@-webkit-keyframes arrowToRight{
+	from{
+		opacity: 0;
+		-webkit-transform: translateX(-50%);
+		        transform: translateX(-50%);
+	}
+	to{
+		opacity: 1;
+		-webkit-transform: translateX(0);
+		        transform: translateX(0);
 	}
 }
 
 @keyframes arrowToRight{
 	from{
 		opacity: 0;
-		transform: translateX(-50%);
+		-webkit-transform: translateX(-50%);
+		        transform: translateX(-50%);
 	}
 	to{
 		opacity: 1;
-		transform: translateX(0);
+		-webkit-transform: translateX(0);
+		        transform: translateX(0);
+	}
+}
+
+@-webkit-keyframes snowman_arrow{
+	from{
+		opacity: 0;
+		-webkit-transform: translateX(-100%);
+		        transform: translateX(-100%);
+	}
+	to{
+		opacity: 1;
+		-webkit-transform: translateX(0);
+		        transform: translateX(0);
 	}
 }
 
 @keyframes snowman_arrow{
 	from{
 		opacity: 0;
-		transform: translateX(-100%);
+		-webkit-transform: translateX(-100%);
+		        transform: translateX(-100%);
 	}
 	to{
 		opacity: 1;
-		transform: translateX(0);
+		-webkit-transform: translateX(0);
+		        transform: translateX(0);
 	}
+}
+
+@-webkit-keyframes fadeAndTada {
+  from {
+  	opacity: 0;
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  10%, 20% {
+    -webkit-transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+    transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+  }
+
+  30%, 50%, 70%, 90% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+  }
+
+  40%, 60%, 80% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+  }
+
+  to {
+  	opacity: 1;
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
 }
 
 @keyframes fadeAndTada {
@@ -226,10 +469,11 @@
   }
 }
 
-@keyframes raindrops{
+@-webkit-keyframes raindrops{
 	from{
 		opacity: 0;
-		transform: translate(0, -100%);
+		-webkit-transform: translate(0, -100%);
+		        transform: translate(0, -100%);
 	}
 	30%{
 		opacity: 0.8;
@@ -237,40 +481,108 @@
 	
 	to{
 		opacity: 1;
-		transform: translate(0, 2000px);
+		-webkit-transform: translate(0, 2000px);
+		        transform: translate(0, 2000px);
+	}
+}
+
+@keyframes raindrops{
+	from{
+		opacity: 0;
+		-webkit-transform: translate(0, -100%);
+		        transform: translate(0, -100%);
+	}
+	30%{
+		opacity: 0.8;
+	}
+	
+	to{
+		opacity: 1;
+		-webkit-transform: translate(0, 2000px);
+		        transform: translate(0, 2000px);
+	}
+}
+
+@-webkit-keyframes ripple{
+	from{
+		opacity: 0;
+		-webkit-transform: scale(0,0);
+		        transform: scale(0,0);
+	}
+	80%{
+		opacity: 0.8;
+		-webkit-transform: scale(0.8, 0.64);
+		        transform: scale(0.8, 0.64);
+	}
+	
+	to{
+		opacity: 0;
+		-webkit-transform: scale(1, 0.8);
+		        transform: scale(1, 0.8);
 	}
 }
 
 @keyframes ripple{
 	from{
 		opacity: 0;
-		transform: scale(0,0);
+		-webkit-transform: scale(0,0);
+		        transform: scale(0,0);
 	}
 	80%{
 		opacity: 0.8;
-		transform: scale(0.8, 0.64);
+		-webkit-transform: scale(0.8, 0.64);
+		        transform: scale(0.8, 0.64);
 	}
 	
 	to{
 		opacity: 0;
-		transform: scale(1, 0.8);
+		-webkit-transform: scale(1, 0.8);
+		        transform: scale(1, 0.8);
+	}
+}
+
+@-webkit-keyframes float{
+	from{
+		-webkit-transform: translate(0, 0);
+		        transform: translate(0, 0);
+	}
+	25%{
+		-webkit-transform: translate(0, -20%);
+		        transform: translate(0, -20%);
+	}
+	50%{
+		-webkit-transform: translate(0, 0);
+		        transform: translate(0, 0);
+	}
+	75%{
+		-webkit-transform: translate(0, -20%);
+		        transform: translate(0, -20%);
+	}
+	to{
+		-webkit-transform: translate(0, 0);
+		        transform: translate(0, 0);
 	}
 }
 
 @keyframes float{
 	from{
-		transform: translate(0, 0);
+		-webkit-transform: translate(0, 0);
+		        transform: translate(0, 0);
 	}
 	25%{
-		transform: translate(0, -20%);
+		-webkit-transform: translate(0, -20%);
+		        transform: translate(0, -20%);
 	}
 	50%{
-		transform: translate(0, 0);
+		-webkit-transform: translate(0, 0);
+		        transform: translate(0, 0);
 	}
 	75%{
-		transform: translate(0, -20%);
+		-webkit-transform: translate(0, -20%);
+		        transform: translate(0, -20%);
 	}
 	to{
-		transform: translate(0, 0);
+		-webkit-transform: translate(0, 0);
+		        transform: translate(0, 0);
 	}
 }

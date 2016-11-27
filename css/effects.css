@@ -5,22 +5,28 @@
   opacity: 1;
   -webkit-transform: scale(1, 1) translateX(-50%);
   transform: scale(1, 1) translateX(-50%);
+  -webkit-transition-delay: 0.5s;
   transition-delay: 0.5s;
 }
 .active #section1 .header_bg {
   opacity: 1;
+  -webkit-transition-delay: 1s;
   transition-delay: 1s;
 }
 .active #section1 .bubble1 {
+  -webkit-animation: dripAndBack 3s ease 2.5s forwards;
   animation: dripAndBack 3s ease 2.5s forwards;
 }
 .active #section1 .bubble2 {
+  -webkit-animation: dripAndBack 3s ease 1.5s forwards;
   animation: dripAndBack 3s ease 1.5s forwards;
 }
 .active #section1 .starts {
+  -webkit-animation: starsTwinkling 3s linear 0.5s infinite;
   animation: starsTwinkling 3s linear 0.5s infinite;
 }
 .active #section1 .starts0 {
+  -webkit-animation: starsTwinkling 3s linear 1s infinite;
   animation: starsTwinkling 3s linear 1s infinite;
 }
 .active #section2 .above_cloud {
@@ -31,64 +37,80 @@
 }
 .active #section2 .text2 {
   opacity: 1;
+  -webkit-transition-delay: 1s;
   transition-delay: 1s;
 }
 .active #section2 .text3 .word1 {
   opacity: 1;
+  -webkit-transition-delay: 2s;
   transition-delay: 2s;
 }
 .active #section2 .text3 .word2 {
   opacity: 1;
+  -webkit-transition-delay: 3s;
   transition-delay: 3s;
 }
 .active #section2 .text3 .word3 {
   opacity: 1;
+  -webkit-transition-delay: 4s;
   transition-delay: 4s;
 }
 .active #section2 .text3 .word4 {
   opacity: 0;
+  -webkit-animation: fadeIn 1s linear 4s forwards;
   animation: fadeIn 1s linear 4s forwards;
 }
 .active #section2 .starts {
+  -webkit-animation: starsTwinkling 4s linear 1s infinite;
   animation: starsTwinkling 4s linear 1s infinite;
 }
 .active #section2 .starts0 {
+  -webkit-animation: starsTwinkling 4s linear 2s infinite;
   animation: starsTwinkling 4s linear 2s infinite;
 }
 .active #section3 .text1 {
   opacity: 1;
+  -webkit-animation: fadeIn 1s ease 0.5s backwards;
   animation: fadeIn 1s ease 0.5s backwards;
 }
 .active #section3 .text2 {
   opacity: 1;
+  -webkit-animation: fadeInRight 1s ease 2.5s backwards;
   animation: fadeInRight 1s ease 2.5s backwards;
 }
 .active #section3 .cloud1 {
   left: -100%;
+  -webkit-transition-delay: 0.5s;
   transition-delay: 0.5s;
 }
 .active #section3 .cloud2 {
   left: -100%;
+  -webkit-transition-delay: 1s;
   transition-delay: 1s;
 }
 .active #section3 .cloud3 {
   left: -100%;
+  -webkit-transition-delay: 0.5s;
   transition-delay: 0.5s;
 }
 .active #section3 .cloud4 {
   left: -100%;
+  -webkit-transition-delay: 1.5s;
   transition-delay: 1.5s;
 }
 .active #section3 .bubble_small {
   opacity: 0;
+  -webkit-animation: bubble1 3.5s linear 0s infinite;
   animation: bubble1 3.5s linear 0s infinite;
 }
 .active #section3 .bubble_middle {
   opacity: 0;
+  -webkit-animation: bubble2 3.5s linear 0s infinite;
   animation: bubble2 3.5s linear 0s infinite;
 }
 .active #section3 .bubble_big {
   opacity: 0;
+  -webkit-animation: bubble3 3.5s linear 0s infinite;
   animation: bubble3 3.5s linear 0s infinite;
 }
 .active #section4 .above_cloud,
@@ -102,6 +124,7 @@
 .active #section6 .bubble_small,
 .active #section7 .bubble_small {
   opacity: 0;
+  -webkit-animation: bubble1 3.5s linear 0s infinite;
   animation: bubble1 3.5s linear 0s infinite;
 }
 .active #section4 .bubble_middle,
@@ -109,6 +132,7 @@
 .active #section6 .bubble_middle,
 .active #section7 .bubble_middle {
   opacity: 0;
+  -webkit-animation: bubble2 3.5s linear 0s infinite;
   animation: bubble2 3.5s linear 0s infinite;
 }
 .active #section4 .bubble_big,
@@ -116,197 +140,246 @@
 .active #section6 .bubble_big,
 .active #section7 .bubble_big {
   opacity: 0;
+  -webkit-animation: bubble3 3.5s linear 0s infinite;
   animation: bubble3 3.5s linear 0s infinite;
 }
 .active #section4 .words1 {
+  -webkit-animation: bounceInLeft 1s 0s;
   animation: bounceInLeft 1s 0s;
 }
 .active #section4 .words2 {
   opacity: 0;
+  -webkit-animation: fadeInLeft 1s 2s forwards;
   animation: fadeInLeft 1s 2s forwards;
 }
 .active #section4 .words3 {
   opacity: 0;
+  -webkit-animation: bounceIn 1s 3s forwards;
   animation: bounceIn 1s 3s forwards;
 }
 .active #section5 .title,
 .active #section6 .title,
 .active #section7 .title {
   opacity: 0;
+  -webkit-animation: fadeInLeft 1s 0s forwards;
   animation: fadeInLeft 1s 0s forwards;
 }
 .active #section5 .sub_title,
 .active #section6 .sub_title,
 .active #section7 .sub_title {
   opacity: 0;
+  -webkit-animation: fadeIn 0.5s 1s forwards;
   animation: fadeIn 0.5s 1s forwards;
 }
 .active #section5 .vapour_arrow {
   opacity: 0;
+  -webkit-animation: arrowUp 1s 1.5s forwards;
   animation: arrowUp 1s 1.5s forwards;
 }
 .active #section5 .vapour_words {
   opacity: 0;
+  -webkit-animation: fadeIn 1s 1.5s forwards;
   animation: fadeIn 1s 1.5s forwards;
 }
 .active #section5 .pressure_arrow {
   opacity: 0;
+  -webkit-animation: arrowDown 1s 2.5s forwards;
   animation: arrowDown 1s 2.5s forwards;
 }
 .active #section5 .pressure_words {
   opacity: 0;
+  -webkit-animation: fadeIn 1s 2.5s forwards;
   animation: fadeIn 1s 2.5s forwards;
 }
 .active #section5 .oxygen_arrow {
   opacity: 0;
+  -webkit-animation: arrowDown 1s 3.5s forwards;
   animation: arrowDown 1s 3.5s forwards;
 }
 .active #section5 .oxygen_words {
   opacity: 0;
+  -webkit-animation: fadeIn 1s 3.5s forwards;
   animation: fadeIn 1s 3.5s forwards;
 }
 .active #section5 .nerve_arrow {
   opacity: 0;
+  -webkit-animation: arrowDown 1s 4.5s forwards;
   animation: arrowDown 1s 4.5s forwards;
 }
 .active #section5 .nerve_words {
   opacity: 0;
+  -webkit-animation: fadeIn 1s 4.5s forwards;
   animation: fadeIn 1s 4.5s forwards;
 }
 .active #section5 .lazy {
   opacity: 0;
+  -webkit-animation: myPulse 2s 5.5s forwards infinite;
   animation: myPulse 2s 5.5s forwards infinite;
 }
 .active #section5 .vapor1 img {
   opacity: 0;
+  -webkit-animation: vapor1 10s 0s linear infinite;
   animation: vapor1 10s 0s linear infinite;
 }
 .active #section5 .vapor2 img {
   opacity: 0;
+  -webkit-animation: vapor2 10s 2s linear infinite;
   animation: vapor2 10s 2s linear infinite;
 }
 .active #section6 .darkness_arrow {
   opacity: 0;
+  -webkit-animation: arrowDown 1s 1.5s forwards;
   animation: arrowDown 1s 1.5s forwards;
 }
 .active #section6 .darkness_words {
   opacity: 0;
+  -webkit-animation: fadeIn 1s 1.5s forwards;
   animation: fadeIn 1s 1.5s forwards;
 }
 .active #section6 .cloudlayer_arrow {
   opacity: 0;
+  -webkit-animation: arrowUp 1s 2.5s forwards;
   animation: arrowUp 1s 2.5s forwards;
 }
 .active #section6 .cloudlayer_words {
   opacity: 0;
+  -webkit-animation: fadeIn 1s 2.5s forwards;
   animation: fadeIn 1s 2.5s forwards;
 }
 .active #section6 .melation_arrow {
   opacity: 0;
+  -webkit-animation: arrowUp 1s 3.5s forwards;
   animation: arrowUp 1s 3.5s forwards;
 }
 .active #section6 .melation2,
 .active #section6 .melation1,
 .active #section6 .annotation {
   opacity: 0;
+  -webkit-animation: fadeIn 1s 3.5s forwards;
   animation: fadeIn 1s 3.5s forwards;
 }
 .active #section6 .lazy {
   opacity: 0;
+  -webkit-animation: myPulse 2s 4.5s forwards infinite;
   animation: myPulse 2s 4.5s forwards infinite;
 }
 .active #section7 .words1 {
   opacity: 1;
+  -webkit-animation: fadeInLeftBig 1s 1.5s backwards;
   animation: fadeInLeftBig 1s 1.5s backwards;
 }
 .active #section7 .words2 {
   opacity: 1;
+  -webkit-animation: fadeIn 1s 3.5s backwards;
   animation: fadeIn 1s 3.5s backwards;
 }
 .active #section8 .above_cloud {
   right: 5%;
 }
 .active #section8 .words1 {
+  -webkit-animation: fadeInDownBig 1s 0s backwards;
   animation: fadeInDownBig 1s 0s backwards;
 }
 .active #section8 .crafts {
   opacity: 0;
+  -webkit-animation: rotateIn 1s 1.5s forwards;
   animation: rotateIn 1s 1.5s forwards;
 }
 .active #section8 .words2 {
+  -webkit-animation: rotateInUpLeft 1s 3s backwards;
   animation: rotateInUpLeft 1s 3s backwards;
 }
 .active #section9 .above_cloud {
   right: 0;
 }
 .active #section9 .words1 {
+  -webkit-animation: fadeInLeft 1s 0s backwards;
   animation: fadeInLeft 1s 0s backwards;
 }
 .active #section9 .words2 {
   width: 100%;
+  -webkit-transition-delay: 1.5s;
   transition-delay: 1.5s;
 }
 .active #section10 .above_cloud {
   right: 0;
 }
 .active #section10 .words1 {
+  -webkit-animation: lightSpeedIn 1s 0.5s backwards;
   animation: lightSpeedIn 1s 0.5s backwards;
 }
 .active #section10 .words2,
 .active #section10 .snowlayer {
+  -webkit-animation: fadeIn 1s 1.5s backwards;
   animation: fadeIn 1s 1.5s backwards;
 }
 .active #section10 .words3 {
+  -webkit-animation: fadeIn 1s 3s backwards;
   animation: fadeIn 1s 3s backwards;
 }
 .active #section10 .voice {
+  -webkit-animation: fadeInLeft 1s 3s backwards;
   animation: fadeInLeft 1s 3s backwards;
 }
 .active #section10 .two_arrows {
+  -webkit-animation: arrowToRight 1s 3s backwards;
   animation: arrowToRight 1s 3s backwards;
 }
 .active #section10 .snowman_arrow {
+  -webkit-animation: fadeIn 2s 3s backwards;
   animation: fadeIn 2s 3s backwards;
 }
 .active #section10 .arrow1 img {
+  -webkit-animation: arrowToRight 0.5s 3.5s backwards;
   animation: arrowToRight 0.5s 3.5s backwards;
 }
 .active #section10 .arrow2 img {
+  -webkit-animation: arrowToRight 0.5s 4s backwards;
   animation: arrowToRight 0.5s 4s backwards;
 }
 .active #section10 .arrow3 img {
+  -webkit-animation: arrowToRight 0.5s 4.5s backwards;
   animation: arrowToRight 0.5s 4.5s backwards;
 }
 .active #section11 .words1 {
+  -webkit-animation: bounceInDown 1s 0.5s backwards;
   animation: bounceInDown 1s 0.5s backwards;
 }
 .active #section11 .words2 {
+  -webkit-animation: fadeInRight 1s 2s backwards;
   animation: fadeInRight 1s 2s backwards;
 }
 .active #section11 .words3 {
+  -webkit-animation: fadeInLeft 1s 3.5s backwards;
   animation: fadeInLeft 1s 3.5s backwards;
 }
 .active #section11 .words4 {
   width: 100%;
+  -webkit-transition-delay: 5s;
   transition-delay: 5s;
 }
 .active #section11 .white_cloud {
   left: -25%;
+  -webkit-transition-delay: 0s;
   transition-delay: 0s;
 }
 .active #section12 .above_cloud {
   right: 0;
 }
 .active #section12 .starts {
+  -webkit-animation: starsTwinkling 3s linear 0.5s infinite;
   animation: starsTwinkling 3s linear 0.5s infinite;
 }
 .active #section12 .starts0 {
+  -webkit-animation: starsTwinkling 3s linear 1s infinite;
   animation: starsTwinkling 3s linear 1s infinite;
 }
 .active #section12 .words1 {
+  -webkit-animation: rubberBand 1s 0s;
   animation: rubberBand 1s 0s;
 }
 .active #section12 .words2 {
+  -webkit-animation: fadeIn 1.5s 1s backwards;
   animation: fadeIn 1.5s 1s backwards;
 }
 .active #section13 .above_cloud {
@@ -316,34 +389,44 @@
   opacity: 1;
   -webkit-transform: scale(1, 1) translateX(-50%);
   transform: scale(1, 1) translateX(-50%);
+  -webkit-transition-delay: 0.5s;
   transition-delay: 0.5s;
 }
 .active #section13 .header_bg {
   opacity: 1;
+  -webkit-transition-delay: 1s;
   transition-delay: 1s;
 }
 .active #section13 .bubble1 {
+  -webkit-animation: dripAndBack 3s ease 1.5s forwards;
   animation: dripAndBack 3s ease 1.5s forwards;
 }
 .active #section13 .bubble2 {
+  -webkit-animation: dripAndBack 3s ease 2.5s forwards;
   animation: dripAndBack 3s ease 2.5s forwards;
 }
 .active #section13 .starts {
+  -webkit-animation: starsTwinkling 3s linear 0.5s infinite;
   animation: starsTwinkling 3s linear 0.5s infinite;
 }
 .active #section13 .starts0 {
+  -webkit-animation: starsTwinkling 3s linear 1s infinite;
   animation: starsTwinkling 3s linear 1s infinite;
 }
 .active .raindrops {
+  -webkit-animation: raindrops 5s ease-in 0s infinite;
   animation: raindrops 5s ease-in 0s infinite;
 }
 .active .ripple {
+  -webkit-animation: ripple 5s linear 0s infinite;
   animation: ripple 5s linear 0s infinite;
 }
 .active .more_arrow_left,
 .active .more_arrow_right {
   opacity: 1;
+  -webkit-transition-delay: 5s;
   transition-delay: 5s;
+  -webkit-animation: float 4s linear 5s infinite;
   animation: float 4s linear 5s infinite;
 }
 /*# sourceMappingURL=effects.css.map */

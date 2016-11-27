@@ -20,6 +20,7 @@ body {
   position: absolute;
   top: 2%;
   right: -100%;
+  -webkit-transition: all 5s ease-in-out;
   transition: all 5s ease-in-out;
 }
 #section1 .above_cloud img {
@@ -33,7 +34,9 @@ body {
   position: absolute;
   top: 9%;
   left: 50%;
+  -webkit-transition: all 1s;
   transition: all 1s;
+  -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
   opacity: 0;
   text-align: center;
@@ -45,7 +48,9 @@ body {
   height: 110%;
   position: absolute;
   left: 52%;
+  -webkit-transition: all 1s;
   transition: all 1s;
+  -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
   opacity: 0;
 }
@@ -54,7 +59,9 @@ body {
   position: absolute;
   top: 12%;
   left: 53%;
+  -webkit-transition: all 1s;
   transition: all 1s;
+  -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
   opacity: 0;
 }
@@ -65,13 +72,16 @@ body {
   position: absolute;
   top: 9%;
   left: 50%;
+  -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
+  -webkit-transform: scale(0.5, 0.5) translateX(-50%);
   transform: scale(0.5, 0.5) translateX(-50%);
   opacity: 0;
 }
 #section1 .header img {
   height: 25%;
   margin-left: 50%;
+  -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
 }
 #section1 .stars_bg {
@@ -89,6 +99,7 @@ body {
   position: absolute;
   top: 4%;
   left: 50%;
+  -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
   opacity: 0;
 }
@@ -98,6 +109,7 @@ body {
   position: absolute;
   top: 18%;
   left: 46%;
+  -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
   opacity: 0;
 }
@@ -108,6 +120,7 @@ body {
   top: 42%;
   left: 50%;
   text-align: center;
+  -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
 }
 #section1 .cat_star img {
@@ -134,6 +147,7 @@ body {
   position: absolute;
   top: 2%;
   right: -100%;
+  -webkit-transition: all 4s ease-in-out;
   transition: all 4s ease-in-out;
 }
 #section2 .above_cloud img {
@@ -154,6 +168,7 @@ body {
   position: absolute;
   top: 30%;
   left: 50%;
+  -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
   opacity: 0;
 }
@@ -163,6 +178,7 @@ body {
   position: absolute;
   top: 18%;
   left: 46%;
+  -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
   opacity: 0;
 }
@@ -173,6 +189,7 @@ body {
   top: 42%;
   left: 50%;
   text-align: center;
+  -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
 }
 #section2 .cat_star img {
@@ -192,6 +209,7 @@ body {
   position: absolute;
   top: 17%;
   left: 50%;
+  -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
   height: 9%;
   width: 80%;
@@ -206,16 +224,19 @@ body {
 }
 #section2 .content .text1 {
   opacity: 0;
+  -webkit-transition: all 1s;
   transition: all 1s;
 }
 #section2 .content .text2 {
   opacity: 0;
+  -webkit-transition: all 1s;
   transition: all 1s;
 }
 #section2 .content .word1,
 #section2 .content .word2,
 #section2 .content .word3 {
   opacity: 0;
+  -webkit-transition: all 1s;
   transition: all 1s;
 }
 #section3 {
@@ -238,6 +259,7 @@ body {
   position: absolute;
   top: 10%;
   left: 80%;
+  -webkit-transition: all 100s linear;
   transition: all 100s linear;
 }
 #section3 .cloud2 {
@@ -245,6 +267,7 @@ body {
   position: absolute;
   top: 18%;
   left: 80%;
+  -webkit-transition: all 60s linear;
   transition: all 60s linear;
 }
 #section3 .cloud3 {
@@ -252,6 +275,7 @@ body {
   position: absolute;
   top: 40%;
   left: 20%;
+  -webkit-transition: all 80s linear;
   transition: all 80s linear;
 }
 #section3 .cloud4 {
@@ -259,6 +283,7 @@ body {
   position: absolute;
   top: 78%;
   left: 30%;
+  -webkit-transition: all 120s linear;
   transition: all 120s linear;
 }
 #section3 .text1 {
@@ -334,6 +359,7 @@ body {
   position: absolute;
   top: 2%;
   right: -100%;
+  -webkit-transition: all 4s ease-in-out;
   transition: all 4s ease-in-out;
 }
 #section4 .above_cloud img {
@@ -420,6 +446,7 @@ body {
   bottom: 8%;
   left: 50%;
   height: 20%;
+  -webkit-transform: translateX(-80%);
   transform: translateX(-80%);
 }
 #section4 .below_light_clouds img {
@@ -455,6 +482,7 @@ body {
   position: absolute;
   top: 2%;
   right: -100%;
+  -webkit-transition: all 4s ease-in-out;
   transition: all 4s ease-in-out;
 }
 #section5 .above_cloud img {
@@ -514,6 +542,7 @@ body {
   bottom: 8%;
   left: 50%;
   height: 20%;
+  -webkit-transform: translateX(-80%);
   transform: translateX(-80%);
 }
 #section5 .below_light_clouds img {
@@ -575,6 +604,7 @@ body {
   top: 10%;
   left: 50%;
   height: 44%;
+  -webkit-transform: translateX(-62%);
   transform: translateX(-62%);
 }
 #section5 .vapor1 img {
@@ -585,6 +615,7 @@ body {
   top: -15%;
   left: 50%;
   height: 80%;
+  -webkit-transform: translateX(-48%);
   transform: translateX(-48%);
 }
 #section5 .vapor2 img {
@@ -700,6 +731,7 @@ body {
   position: absolute;
   top: 2%;
   right: -100%;
+  -webkit-transition: all 4s ease-in-out;
   transition: all 4s ease-in-out;
 }
 #section6 .above_cloud img {
@@ -885,6 +917,7 @@ body {
   bottom: 8%;
   left: 50%;
   height: 20%;
+  -webkit-transform: translateX(-80%);
   transform: translateX(-80%);
 }
 #section6 .below_light_clouds img {
@@ -920,6 +953,7 @@ body {
   position: absolute;
   top: 2%;
   right: -100%;
+  -webkit-transition: all 4s ease-in-out;
   transition: all 4s ease-in-out;
 }
 #section7 .above_cloud img {
@@ -1014,6 +1048,7 @@ body {
   bottom: 8%;
   left: 50%;
   height: 20%;
+  -webkit-transform: translateX(-80%);
   transform: translateX(-80%);
 }
 #section7 .below_light_clouds img {
@@ -1049,6 +1084,7 @@ body {
   position: absolute;
   top: 2%;
   right: -100%;
+  -webkit-transition: all 4s ease-in-out;
   transition: all 4s ease-in-out;
 }
 #section8 .above_cloud img {
@@ -1090,6 +1126,7 @@ body {
 }
 #section8 .below_trees img {
   margin-left: 50%;
+  -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
   width: 130%;
 }
@@ -1098,6 +1135,7 @@ body {
   position: absolute;
   left: 50%;
   bottom: 0;
+  -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
 }
 #section8 .below_mid_cat img {
@@ -1124,6 +1162,7 @@ body {
   position: absolute;
   top: 2%;
   right: -100%;
+  -webkit-transition: all 4s ease-in-out;
   transition: all 4s ease-in-out;
 }
 #section9 .above_cloud img {
@@ -1144,6 +1183,7 @@ body {
   position: absolute;
   top: 40%;
   left: 18%;
+  -webkit-transition: all 1.5s linear;
   transition: all 1.5s linear;
   overflow: hidden;
 }
@@ -1155,6 +1195,7 @@ body {
   position: absolute;
   left: 50%;
   top: 33%;
+  -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
 }
 #section9 .bg_trees img {
@@ -1170,6 +1211,7 @@ body {
 #section9 .below_trees img {
   width: 135%;
   margin-left: 50%;
+  -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
 }
 #section9 .below_mid_cat {
@@ -1177,6 +1219,7 @@ body {
   position: absolute;
   left: 50%;
   bottom: 0;
+  -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
 }
 #section9 .below_mid_cat img {
@@ -1203,6 +1246,7 @@ body {
   position: absolute;
   top: 2%;
   right: -100%;
+  -webkit-transition: all 4s ease-in-out;
   transition: all 4s ease-in-out;
 }
 #section10 .above_cloud img {
@@ -1223,6 +1267,7 @@ body {
   position: absolute;
   left: 50%;
   top: 43%;
+  -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
 }
 #section10 .bg_trees img {
@@ -1237,6 +1282,7 @@ body {
 }
 #section10 .below_trees img {
   margin-left: 50%;
+  -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
   width: 130%;
   opacity: 0.6;
@@ -1246,6 +1292,7 @@ body {
   position: absolute;
   left: 50%;
   bottom: 0;
+  -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
 }
 #section10 .below_mid_cat img {
@@ -1301,6 +1348,7 @@ body {
   height: 25%;
   position: absolute;
   top: 3%;
+  -webkit-transform: translateX(-100%);
   transform: translateX(-100%);
 }
 #section10 .snowlayer img {
@@ -1377,6 +1425,7 @@ body {
 }
 #section11 .below_trees img {
   margin-left: 50%;
+  -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
   width: 130%;
   opacity: 0.6;
@@ -1386,6 +1435,7 @@ body {
   position: absolute;
   left: 50%;
   bottom: 0;
+  -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
 }
 #section11 .below_mid_cat img {
@@ -1434,6 +1484,7 @@ body {
   top: 61%;
   left: 7%;
   width: 0;
+  -webkit-transition: all 2s linear;
   transition: all 2s linear;
   overflow: hidden;
 }
@@ -1445,6 +1496,7 @@ body {
   position: absolute;
   top: 62%;
   left: 25%;
+  -webkit-transition: all 30s;
   transition: all 30s;
 }
 #section11 .white_cloud img {
@@ -1461,6 +1513,7 @@ body {
   position: absolute;
   top: 2%;
   right: -100%;
+  -webkit-transition: all 5s ease-in-out;
   transition: all 5s ease-in-out;
 }
 #section12 .above_cloud img {
@@ -1503,6 +1556,7 @@ body {
   position: absolute;
   top: 4%;
   left: 50%;
+  -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
   opacity: 0;
 }
@@ -1512,6 +1566,7 @@ body {
   position: absolute;
   top: 18%;
   left: 46%;
+  -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
   opacity: 0;
 }
@@ -1522,6 +1577,7 @@ body {
   top: 40%;
   left: 50%;
   text-align: center;
+  -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
 }
 #section12 .cat_star img {
@@ -1548,6 +1604,7 @@ body {
   position: absolute;
   top: 2%;
   right: -100%;
+  -webkit-transition: all 5s ease-in-out;
   transition: all 5s ease-in-out;
 }
 #section13 .above_cloud img {
@@ -1559,7 +1616,9 @@ body {
   position: absolute;
   top: 9%;
   left: 50%;
+  -webkit-transition: all 1s;
   transition: all 1s;
+  -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
   opacity: 0;
   text-align: center;
@@ -1572,7 +1631,9 @@ body {
   position: absolute;
   top: 0%;
   left: 48%;
+  -webkit-transition: all 1s;
   transition: all 1s;
+  -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
   opacity: 0;
 }
@@ -1581,7 +1642,9 @@ body {
   position: absolute;
   top: 10%;
   left: 50%;
+  -webkit-transition: all 1s;
   transition: all 1s;
+  -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
   opacity: 0;
 }
@@ -1592,7 +1655,9 @@ body {
   position: absolute;
   top: 9%;
   left: 50%;
+  -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
+  -webkit-transform: scale(0.5, 0.5) translateX(-50%);
   transform: scale(0.5, 0.5) translateX(-50%);
   opacity: 0;
   text-align: center;
@@ -1615,6 +1680,7 @@ body {
   position: absolute;
   top: 4%;
   left: 50%;
+  -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
   opacity: 0;
 }
@@ -1624,6 +1690,7 @@ body {
   position: absolute;
   top: 18%;
   left: 46%;
+  -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
   opacity: 0;
 }
@@ -1634,6 +1701,7 @@ body {
   top: 40%;
   left: 50%;
   text-align: center;
+  -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
 }
 #section13 .cat_star img {
@@ -1656,6 +1724,7 @@ body {
   top: 83%;
   left: 50%;
   text-align: center;
+  -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
 }
 #section13 .name img {
@@ -1694,6 +1763,7 @@ body {
   bottom: 18%;
   height: 8%;
   opacity: 0;
+  -webkit-transition: all 2s;
   transition: all 2s;
 }
 .more_arrow_right img {
@@ -1705,6 +1775,7 @@ body {
   bottom: 18%;
   height: 8%;
   opacity: 0;
+  -webkit-transition: all 2s;
   transition: all 2s;
 }
 .more_arrow_left img {
