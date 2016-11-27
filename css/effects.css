@@ -355,8 +355,8 @@
 }
 .active #section11 .words4 {
   width: 100%;
-  -webkit-transition-delay: 5s;
-  transition-delay: 5s;
+  -webkit-transition-delay: 5.5s;
+  transition-delay: 5.5s;
 }
 .active #section11 .white_cloud {
   left: -25%;
