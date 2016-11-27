@@ -40,9 +40,21 @@ function startRipples(){
 	var max = 10;
 	//往雨层div里面添加涟漪img，利用CSS3做涟漪放大动画
 	var flag = 0;
+	//生成随机数数组，用于随机生成涟漪位置
+	var random_array = [];
+	for (var i = 0; i < max; i++) {
+		random_array.push(
+			Math.round(Math.random()*10)
+		)
+	}
 	rippleTimer = setInterval(function(){
 		if (flag < max) {
-			var ripple = '<img class="ripple" style="left: '+random(0,100)+'%; top: '+random(0,100)+'%;" src="img/page7/ripple.png"/>';
+			if (random_array[flag] < (max*0.7)) {
+				var ripple = '<img class="ripple" style="left: '+random(-10,25)+'%; top: '+random(0,100)+'%;" src="img/page7/ripple.png"/>';
+			} else{
+				var ripple = '<img class="ripple" style="left: '+random(25,70)+'%; top: '+random(0,50)+'%;" src="img/page7/ripple.png"/>';
+			}
+
 			ripplesLayer.append(ripple);
 			flag++;
 		} else{
@@ -86,7 +98,7 @@ function startSnow(index){
 		particles.push({
 			x: Math.random()*W, //x-coordinate
 			y: Math.random()*H, //y-coordinate
-			r: Math.random()*4+1, //radius
+			r: Math.random()*3+1, //radius
 			d: Math.random()*mp //density
 		})
 	}
